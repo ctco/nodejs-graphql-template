@@ -6,8 +6,8 @@ export default graphqlHTTP({
   schema,
   graphiql: process.env.GRAPHIQL,
   formatError: error => {
-    const {message, locations, path} = error;
-    logger.error(`GraphQL error`, {message, locations, path});
+    const {message, locations, path, stack} = error;
+    logger.error(`GraphQL error`, {message, locations, path}, stack);
     return error;
   },
 });

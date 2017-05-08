@@ -1,3 +1,4 @@
+import 'source-map-support';
 import env from './env';
 process.env = env;
 import * as chalk from 'chalk';

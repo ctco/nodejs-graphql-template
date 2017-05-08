@@ -9,6 +9,7 @@
     "moduleResolution": "Node",
     "pretty": true,
     "strictNullChecks": true,
+    "sourceMap": true,
     "lib": ["ES2017"]
   },
   "exclude": [
