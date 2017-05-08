@@ -1,0 +1,18 @@
+{
+  "files": [
+    "server.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "./build",
+    "target": "ES2017",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "pretty": true,
+    "strictNullChecks": true,
+    "lib": ["ES2017"]
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "koa-graphql-ts-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon -e ts --exec \"(npm run lint -- --force && tsc && node build/server.js) || true\"",
+    "test": "jest",
+    "lint": "tslint -t stylish 'src/**/*.ts'"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "dependencies": {
+    "envalid": "3.0.0",
+    "graphql": "0.9.6",
+    "koa": "2.2.0",
+    "koa-convert": "1.2.0",
+    "koa-cors": "0.0.16",
+    "koa-graphql": "0.7.0",
+    "koa-router": "7.1.1",
+    "request-promise": "4.2.1"
+  },
+  "devDependencies": {
+    "@types/graphql": "0.9.1",
+    "@types/jest": "19.2.3",
+    "@types/koa": "2.0.39",
+    "@types/koa-router": "7.0.22",
+    "@types/request-promise": "4.1.33",
+    "jest": "20.0.0",
+    "nodemon": "1.11.0",
+    "ts-jest": "20.0.1",
+    "tslint": "5.2.0",
+    "typescript": "2.3.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts)$"
+  }
+}

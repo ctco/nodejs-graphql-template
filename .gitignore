@@ -1,3 +1,5 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
 # Logs
 logs
 *.log
@@ -14,12 +16,6 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
 # node-waf configuration
 .lock-wscript
 
@@ -28,10 +24,27 @@ build/Release
 
 # Dependency directories
 node_modules
-jspm_packages
 
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
 .node_repl_history
+
+# IDEA/WebStorm
+.idea/
+*.iml
+
+# testing
+/coverage
+
+# build directory
+/build
+
+# yarn
+yarn-debug.log*
+yarn-error.log*
+
+# misc
+.DS_Store
+.env
