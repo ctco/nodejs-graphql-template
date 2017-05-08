@@ -5,7 +5,9 @@ import router from './router';
 
 const app = new Koa();
 
-app.use(convert(cors()));
+if (process.env.CORS) {
+  app.use(convert(cors()));
+}
 app.use(router.routes());
 app.use(router.allowedMethods());
 
