@@ -1,7 +1,6 @@
 import env from './env';
 process.env = env;
 import * as chalk from 'chalk';
-
 import app from './src/app';
 
 const port = process.env.PORT || 3001;
