@@ -8,7 +8,7 @@ Koa, GraphQL and TypeScript template project
 `$ npm i`
 
 ### Development Mode
-1. `$ npm start`
+`$ npm start`
 
 GraphiQL will be available at http://localhost:3001/api/graphql
 
