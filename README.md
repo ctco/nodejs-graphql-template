@@ -6,24 +6,33 @@ Koa, GraphQL and TypeScript template project
 
 ## Installation
 `$ npm i`
+
 or 
+
 `$ yarn`
+
 
 ### Development Mode
 `$ npm start`
+
 or
+
 `$ yarn start`
 
 ### Run unit tests
 `$ npm test`
+
 or
+
 `$ yarn test`
 
 runs unit tests (sing run)
 
 ### Build (for production deployment)
 `$ npm run build`
+
 or
+
 `$ yarn build`
 
 ## Tech Stack
