@@ -6,7 +6,10 @@
     "build": "tsc",
     "start": "nodemon -e ts --exec \"(npm run lint -- --force && tsc && node build/server.js) || true\"",
     "test": "jest",
-    "lint": "tslint -t stylish 'src/**/*.ts'"
+    "lint": "tslint -t stylish 'src/**/*.ts'",
+    "dev": "npm run build:watch | npm run start:watch",
+    "build:watch": "tsc --watch",
+    "start:watch": "nodemon -e js build/server.js"
   },
   "engines": {
     "node": ">= 7.6.0"
