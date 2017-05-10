@@ -9,7 +9,8 @@
     "lint": "tslint -t stylish 'src/**/*.ts'",
     "dev": "npm run build:watch | npm run start:watch",
     "build:watch": "tsc --watch",
-    "start:watch": "nodemon --ext js --delay 250ms build/server.js"
+    "start:watch": "nodemon --ext js --delay 250ms build/server.js",
+    "lint:watch": "chokidar \"**/*.ts\" -c \"npm run lint\""
   },
   "engines": {
     "node": ">= 7.6.0"
@@ -35,6 +36,7 @@
     "@types/koa": "2.0.39",
     "@types/koa-router": "7.0.22",
     "@types/request-promise": "4.1.33",
+    "chokidar-cli": "1.2.0",
     "jest": "20.0.0",
     "nodemon": "1.11.0",
     "ts-jest": "20.0.1",
