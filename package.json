@@ -9,7 +9,7 @@
     "lint": "tslint -t stylish 'src/**/*.ts'",
     "dev": "npm run build:watch | npm run start:watch",
     "build:watch": "tsc --watch",
-    "start:watch": "nodemon -e js build/server.js"
+    "start:watch": "nodemon --ext js --delay 250ms build/server.js"
   },
   "engines": {
     "node": ">= 7.6.0"
