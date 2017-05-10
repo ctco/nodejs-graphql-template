@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "npm run lint && npm run build && npm-run-all --parallel build:watch lint:watch serve:watch",
+    "start": "npm-run-all lint build --parallel build:watch lint:watch serve:watch",
     "test": "jest",
     "lint": "tslint -t stylish 'src/**/*.ts'",
     "build:watch": "tsc --watch",
