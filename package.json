@@ -9,7 +9,7 @@
     "lint": "tslint -t stylish 'src/**/*.ts'",
     "build:watch": "tsc --watch",
     "serve:watch": "nodemon --ext js --delay 250ms build/server.js",
-    "lint:watch": "chokidar \"**/*.ts\" -c \"tslint -t stylish '{path}'\""
+    "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\""
   },
   "engines": {
     "node": ">= 7.6.0"
