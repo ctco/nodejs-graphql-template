@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "npm-run-all lint build --parallel build:watch lint:watch serve:watch",
+    "start": "npm-run-all lint --parallel lint:watch build:watch",
     "test": "jest",
     "lint": "tslint -t stylish 'src/**/*.ts'",
-    "build:watch": "tsc --watch",
-    "serve:watch": "nodemon --ext js --delay 250ms build/server.js",
+    "build:watch": "tsc-watch --onSuccess 'node build/server.js'",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\""
   },
   "engines": {
@@ -40,6 +39,7 @@
     "nodemon": "1.11.0",
     "npm-run-all": "4.0.2",
     "ts-jest": "20.0.1",
+    "tsc-watch": "^1.0.5",
     "tslint": "5.2.0",
     "typescript": "2.3.2"
   },
