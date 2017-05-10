@@ -36,7 +36,6 @@
     "@types/request-promise": "4.1.33",
     "chokidar-cli": "1.2.0",
     "jest": "20.0.0",
-    "nodemon": "1.11.0",
     "ts-jest": "20.0.1",
     "tsc-watch": "^1.0.5",
     "tslint": "5.2.0",
