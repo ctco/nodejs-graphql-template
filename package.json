@@ -4,13 +4,11 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "nodemon -e ts --exec \"(npm run lint -- --force && tsc && node build/server.js) || true\"",
+    "start": "npm run build && npm-run-all --parallel build:watch lint:watch serve:watch",
     "test": "jest",
     "lint": "tslint -t stylish 'src/**/*.ts'",
-    "dev": "npm run build:watch | npm run start:watch",
-    "dev2": "npm-run-all --parallel build:watch lint:watch start:watch",
     "build:watch": "tsc --watch",
-    "start:watch": "nodemon --ext js --delay 250ms build/server.js",
+    "serve:watch": "nodemon --ext js --delay 250ms build/server.js",
     "lint:watch": "chokidar \"**/*.ts\" -c \"npm run lint\""
   },
   "engines": {
