@@ -6,6 +6,7 @@
     "build": "tsc",
     "start": "nodemon -e ts --exec \"(npm run lint -- --force && tsc && node build/server.js) || true\"",
     "test": "jest",
+    "test:ci": "jest --config jest.ci.config.js",
     "lint": "tslint -t stylish 'src/**/*.ts'"
   },
   "engines": {
@@ -38,15 +39,7 @@
     "tslint": "5.2.0",
     "typescript": "2.3.2"
   },
-  "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
-    "transform": {
-      "\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "/__tests__/.*\\.(ts)$",
-    "testResultsProcessor": "./node_modules/jest-junit"
+  "jest-junit": {
+    "output": "./reports/test/junit.xml"
   }
 }
