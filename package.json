@@ -31,9 +31,10 @@
     "@types/koa": "2.0.39",
     "@types/koa-router": "7.0.22",
     "@types/request-promise": "4.1.33",
-    "jest": "20.0.0",
+    "jest": "20.0.1",
+    "jest-junit": "1.5.1",
     "nodemon": "1.11.0",
-    "ts-jest": "20.0.1",
+    "ts-jest": "20.0.3",
     "tslint": "5.2.0",
     "typescript": "2.3.2"
   },
@@ -45,6 +46,7 @@
     "transform": {
       "\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
-    "testRegex": "/__tests__/.*\\.(ts)$"
+    "testRegex": "/__tests__/.*\\.(ts)$",
+    "testResultsProcessor": "./node_modules/jest-junit"
   }
 }
