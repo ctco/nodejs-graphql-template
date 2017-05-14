@@ -48,4 +48,4 @@ yarn-error.log*
 # misc
 .DS_Store
 .env
-junit.xml
+reports/
