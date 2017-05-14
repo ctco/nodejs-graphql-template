@@ -6,6 +6,7 @@
     "build": "tsc",
     "start": "npm run lint && run-p lint:watch build:watch",
     "test": "jest",
+    "test:ci": "jest --config jest.ci.config.js",
     "lint": "tslint -t stylish 'src/**/*.ts'",
     "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\""
@@ -35,21 +36,15 @@
     "@types/koa-router": "7.0.22",
     "@types/request-promise": "4.1.33",
     "chokidar-cli": "1.2.0",
-    "jest": "20.0.0",
+    "jest": "20.0.1",
+    "jest-junit": "1.5.1",
     "npm-run-all": "4.0.2",
-    "ts-jest": "20.0.1",
+    "ts-jest": "20.0.3",
     "tsc-watch": "1.0.5",
     "tslint": "5.2.0",
     "typescript": "2.3.2"
   },
-  "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
-    "transform": {
-      "\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "/__tests__/.*\\.(ts)$"
+  "jest-junit": {
+    "output": "./reports/test/junit.xml"
   }
 }
