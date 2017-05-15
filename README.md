@@ -1,4 +1,4 @@
-# koa-graphql-ts-template
+ # koa-graphql-ts-template
 
 Koa, GraphQL and TypeScript template project
 
@@ -44,9 +44,9 @@ or
 ## Features
 
 - Configuration with `.env`:
-  - CORS
-  - GraphiQL
-  - Logging
+  - CORS toggle
+  - GraphiQL toggle
+  - Logging levels
 - Development mode:
   - Incremental builds 
   - Automatic server restart
