@@ -1,45 +1,6 @@
  # koa-graphql-ts-template
-
-Koa, GraphQL and TypeScript template project
-
-## Required Software
-
-- node >= 7.6.0
-
-## Installation
-
-`$ npm i`
-
-or 
-
-`$ yarn`
-
-
-### Development Mode
-
-`$ npm start`
-
-or
-
-`$ yarn start`
-
-### Run unit tests
-
-`$ npm test`
-
-or
-
-`$ yarn test`
-
-runs unit tests (sing run)
-
-### Build (for production deployment)
-
-`$ npm run build`
-
-or
-
-`$ yarn build`
+ 
+Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Features
 
@@ -57,6 +18,27 @@ or
 - Reporting
   - Test result export to JUnit format
   - Coverage result export to Cobertura format
+
+## Required Software
+
+- node >= 7.6.0
+
+## Installation
+
+`$ npm i` or `$ yarn`
+
+## Development Mode
+
+`$ npm start` or `$ yarn start`
+
+## Run unit tests
+
+> single test run
+`$ npm test` or `$ yarn test`
+
+## Build (for production deployment)
+
+`$ npm run build` or `$ yarn build`
 
 ## Tech Stack
 
@@ -76,5 +58,4 @@ or
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)
 
 - winston
-  - [GitHub](https://github.com/winstonjs/winston)
-  
+  - [GitHub](https://github.com/winstonjs/winston) 
