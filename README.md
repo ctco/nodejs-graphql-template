@@ -41,6 +41,23 @@ or
 
 `$ yarn build`
 
+## Features
+
+- Configuration with `.env`:
+  - CORS
+  - GraphiQL
+  - Logging
+- Development mode:
+  - Incremental builds 
+  - Automatic server restart
+  - Linting
+- Testing
+  - Unit tests
+  - Integration tests for GraphQL schema
+- Reporting
+  - Test result export to JUnit format
+  - Coverage result export to Cobertura format
+
 ## Tech Stack
 
 - TypeScript
