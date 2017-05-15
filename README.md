@@ -34,6 +34,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
 ## Run unit tests
 
 > single test run
+
 `$ npm test` or `$ yarn test`
 
 ## Build (for production deployment)
