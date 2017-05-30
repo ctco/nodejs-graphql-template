@@ -6,9 +6,9 @@
     "build": "tsc",
     "start": "npm run lint && run-p lint:watch build:watch",
     "test": "jest --projects src",
-    "test:ci": "npm run test:all -- --config jest.ci.config.js",
     "test:integration": "jest --projects src/graphql",
     "test:all": "jest --projects src src/graphql",
+    "test:all:ci": "cross-env TEST_CI=1 jest --projects src src/graphql",
     "lint": "tslint -t stylish 'src/**/*.ts' --force",
     "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\""
@@ -39,6 +39,7 @@
     "@types/nock": "8.2.1",
     "@types/request-promise": "4.1.33",
     "chokidar-cli": "1.2.0",
+    "cross-env": "5.0.0",
     "jest": "20.0.1",
     "jest-junit": "1.5.1",
     "nock": "9.0.13",
