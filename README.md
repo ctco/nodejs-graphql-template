@@ -62,4 +62,4 @@ Koa, GraphQL and TypeScript template project with batteries included.
   - [GitHub](https://github.com/winstonjs/winston)
   
 ## Cloud Deployment 
-  - [Azure](https://github.com/ctco-dev/koa-graphql-ts-template/tree/azure)
+  - [Azure App Service](https://github.com/ctco-dev/koa-graphql-ts-template/tree/azure)
