@@ -49,9 +49,15 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 ### Generate coverage reports
 
-Set environment variable `CI` to true to generate coverage reports
+Set environment variable `CI` to true to generate coverage reports.
+
+In *nix:
 
 `CI=true npm run test:all`
+
+In Windows:
+
+`set CI=true && npm run test:all`
 
 ## Build (for production deployment)
 
