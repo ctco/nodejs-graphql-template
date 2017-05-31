@@ -11,7 +11,3 @@ cache:
 script:
   - npm run test:all
   - npm run build
-# killme please
-branches:
-  only:
-    issue-7-configure-ci
