@@ -33,11 +33,11 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Run tests
 
-### Run unit tests
-
 > single test run
 
-`$ npm test` or `$ yarn test`
+### Run unit tests
+
+`$ npm run test:unit`
 
 ### Run integration tests
 
@@ -45,7 +45,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 ### Run all tests
 
-`$ npm run test:all`
+`$ npm test`
 
 ### Generate coverage reports
 
@@ -53,11 +53,11 @@ Set environment variable `CI` to true to generate coverage reports.
 
 In *nix:
 
-`CI=true npm run test:all`
+`CI=true npm test`
 
 In Windows:
 
-`set CI=true && npm run test:all`
+`set CI=true && npm test`
 
 ## Build (for production deployment)
 
