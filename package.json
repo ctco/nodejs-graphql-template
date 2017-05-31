@@ -6,7 +6,6 @@
     "build": "tsc",
     "start": "npm run lint && run-p lint:watch build:watch",
     "test": "jest --projects src",
-    "test:ci": "npm run test:all -- --config jest.ci.config.js",
     "test:integration": "jest --projects src/graphql",
     "test:all": "jest --projects src src/graphql",
     "lint": "tslint -t stylish 'src/**/*.ts' --force",

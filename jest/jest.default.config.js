@@ -6,10 +6,10 @@ const path = require('path');
 module.exports = {
   "moduleFileExtensions": [
     "ts",
-    "js",
+    "js"
   ],
   "transform": {
-    "\\.(ts)$": path.join(__dirname, "node_modules/ts-jest/preprocessor.js"),
+    "\\.(ts)$": "ts-jest/preprocessor"
   },
-  "testRegex": "/__tests__/.*\\.test\\.(ts)$",
+  "testRegex": "/__tests__/.*\\.test\\.(ts)$"
 };
