@@ -31,11 +31,27 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 `$ npm start` or `$ yarn start`
 
-## Run unit tests
+## Run tests
+
+### Run unit tests
 
 > single test run
 
 `$ npm test` or `$ yarn test`
+
+### Run integration tests
+
+`$ npm run test:integration`
+
+### Run all tests
+
+`$ npm run test:all`
+
+### Generate coverage reports
+
+Set environment variable `CI` to true to generate coverage reports
+
+`CI=true npm run test:all`
 
 ## Build (for production deployment)
 
