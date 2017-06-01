@@ -1,5 +1,1 @@
-module.exports = Object.assign({}, require('./jest.default.config'), {
-  "testPathIgnorePatterns": [
-    "/src/graphql/__tests__"
-  ]
-});
+module.exports = require('./jest/default.config');

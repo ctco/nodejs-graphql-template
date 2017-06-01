@@ -1,4 +1,6 @@
- # koa-graphql-ts-template
+[![Build Status](https://travis-ci.org/ctco-dev/koa-graphql-ts-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-ts-template)
+
+# koa-graphql-ts-template
  
 Koa, GraphQL and TypeScript template project with batteries included.
 
@@ -31,11 +33,33 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 `$ npm start` or `$ yarn start`
 
-## Run unit tests
+## Run tests
 
 > single test run
 
-`$ npm test` or `$ yarn test`
+### Run unit tests
+
+`$ npm run test:unit`
+
+### Run integration tests
+
+`$ npm run test:integration`
+
+### Run all tests
+
+`$ npm test`
+
+### Generate coverage reports
+
+Set environment variable `CI` to true to generate coverage reports.
+
+In *nix:
+
+`CI=true npm test`
+
+In Windows:
+
+`set CI=true && npm test`
 
 ## Build (for production deployment)
 
@@ -59,4 +83,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)
 
 - winston
-  - [GitHub](https://github.com/winstonjs/winston) 
+  - [GitHub](https://github.com/winstonjs/winston)
+  
+## Cloud Deployment 
+  - [Azure App Service](https://github.com/ctco-dev/koa-graphql-ts-template/tree/azure)

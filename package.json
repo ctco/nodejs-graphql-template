@@ -5,10 +5,10 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run lint && run-p lint:watch build:watch",
-    "test": "jest --projects src",
-    "test:ci": "npm run test:all -- --config jest.ci.config.js",
-    "test:integration": "jest --projects src/graphql",
-    "test:all": "jest --projects src src/graphql",
+    "test": "npm run test:all",
+    "test:integration": "jest --config jest/integration.config.js",
+    "test:unit": "jest --config jest/unit.config.js",
+    "test:all": "jest",
     "lint": "tslint -t stylish 'src/**/*.ts' --force",
     "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\""
