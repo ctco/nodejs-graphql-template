@@ -1,4 +1,6 @@
- # koa-graphql-ts-template
+[![Build Status](https://travis-ci.org/ctco-dev/koa-graphql-ts-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-ts-template)
+
+# koa-graphql-ts-template
  
 Koa, GraphQL and TypeScript template project with batteries included.
 
