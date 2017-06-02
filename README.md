@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/ctco-dev/koa-graphql-ts-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-ts-template)
 
 # koa-graphql-ts-template
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-ts-template.svg)](https://greenkeeper.io/)
  
 Koa, GraphQL and TypeScript template project with batteries included.
 
