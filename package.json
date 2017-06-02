@@ -19,12 +19,12 @@
   "dependencies": {
     "chalk": "1.1.3",
     "envalid": "3.0.0",
-    "graphql": "0.9.6",
+    "graphql": "0.10.1",
     "koa": "2.2.0",
     "koa-convert": "1.2.0",
     "koa-cors": "0.0.16",
     "koa-graphql": "0.7.0",
-    "koa-router": "7.1.1",
+    "koa-router": "7.2.0",
     "moment": "2.18.1",
     "request-promise": "4.2.1",
     "source-map-support": "0.4.15",
@@ -33,20 +33,20 @@
   "devDependencies": {
     "@types/chalk": "0.4.31",
     "@types/graphql": "0.9.1",
-    "@types/jest": "19.2.3",
+    "@types/jest": "19.2.4",
     "@types/koa": "2.0.39",
     "@types/koa-router": "7.0.22",
     "@types/nock": "8.2.1",
     "@types/request-promise": "4.1.33",
     "chokidar-cli": "1.2.0",
-    "jest": "20.0.1",
+    "jest": "20.0.4",
     "jest-junit": "1.5.1",
     "nock": "9.0.13",
     "npm-run-all": "4.0.2",
-    "ts-jest": "20.0.3",
+    "ts-jest": "20.0.5",
     "tsc-watch": "1.0.5",
-    "tslint": "5.2.0",
-    "typescript": "2.3.2"
+    "tslint": "5.4.2",
+    "typescript": "2.3.4"
   },
   "jest-junit": {
     "output": "./reports/test/junit.xml"
