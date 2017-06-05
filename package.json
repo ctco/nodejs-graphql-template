@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "tsc",
+    "build": "npm run lint && tsc",
     "start": "npm run lint && run-p lint:watch build:watch",
     "test": "npm run test:all",
     "test:integration": "jest --config jest/integration.config.js",
     "test:unit": "jest --config jest/unit.config.js",
     "test:all": "jest",
-    "lint": "tslint -t stylish 'src/**/*.ts' --force",
+    "lint": "tslint -t stylish 'src/**/*.ts'",
     "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\""
   },
