@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "npm run lint && tsc",
-    "start": "npm run lint && run-p lint:watch build:watch",
+    "start": "npm run lint -- --force && run-p lint:watch build:watch",
     "test": "npm run test:all",
     "test:integration": "jest --config jest/integration.config.js",
     "test:unit": "jest --config jest/unit.config.js",
