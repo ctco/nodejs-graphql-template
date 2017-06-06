@@ -13,7 +13,7 @@ beforeAll(() => {
     type: 'success',
     value: {
       id: 2000,
-      joke: "In the movie &quot;The Matrix&quot;, Chuck Norris is the Matrix. If you pay close attention in the green &quot;falling code&quot; scenes, you can make out the faint texture of his beard.",
+      joke: "When God said, &quot;let there be light&quot;, Chuck Norris said, &quot;say 'please'.&quot;",
       categories: []
     }
   };
