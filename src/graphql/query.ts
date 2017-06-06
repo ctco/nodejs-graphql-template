@@ -10,10 +10,7 @@ const Query = new GraphQLObjectType({
   fields: () => ({
     joke: {
       args: {
-        category: {
-          type: JokeCategoryEnum,
-          defaultValue: 'nerdy'
-        }
+        category: {type: JokeCategoryEnum}
       },
       type: Joke,
       resolve: jokeResolver

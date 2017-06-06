@@ -7,10 +7,10 @@ interface IJokeCategory {
 }
 
 const JokeCategoryEnum = new GraphQLEnumType({
-  name: 'CATEGORY',
+  name: 'JokeCategory',
   values: {
-    NERDY: {value: 'nerdy'},
-    EXPLICIT: {value: 'explicit'},
+    NERDY: {value: 'NERDY'},
+    EXPLICIT: {value: 'EXPLICIT'},
   }
 });
 

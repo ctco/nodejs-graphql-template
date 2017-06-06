@@ -1,9 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`query.joke should match snapshot 1`] = `
+exports[`query.joke should match default snapshot 1`] = `
 Object {
   "joke": Object {
-    "category": "NERDY",
+    "categories": Array [],
+    "text": "In the movie &quot;The Matrix&quot;, Chuck Norris is the Matrix. If you pay close attention in the green &quot;falling code&quot; scenes, you can make out the faint texture of his beard.",
+  },
+}
+`;
+
+exports[`query.joke should match nerdy snapshot 1`] = `
+Object {
+  "joke": Object {
+    "categories": Array [
+      "NERDY",
+    ],
     "text": "Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
   },
 }

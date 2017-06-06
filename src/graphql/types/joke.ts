@@ -1,20 +1,21 @@
 import {
   GraphQLObjectType,
   GraphQLString,
-  GraphQLNonNull
+  GraphQLNonNull,
+  GraphQLList
 } from 'graphql';
 import JokeCategoryEnum, { IJokeCategoryValues } from './joke-category';
 
 interface IJoke {
   text: string;
-  category: IJokeCategoryValues;
+  categories: IJokeCategoryValues[];
 }
 
 const Joke = new GraphQLObjectType({
   name: 'Joke',
   fields: () => ({
     text: {type: new GraphQLNonNull(GraphQLString)},
-    category: {type: new GraphQLNonNull(JokeCategoryEnum)},
+    categories: {type: new GraphQLList(JokeCategoryEnum)},
   })
 });
 
