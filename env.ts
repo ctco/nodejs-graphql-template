@@ -3,7 +3,7 @@ import * as envalid from 'envalid';
 const { url, bool, str } = envalid;
 
 const env = envalid.cleanEnv(process.env, {
-  JOKE_SERVICE_URI: url(),
+  JOKE_SERVICE_URI: url({default: 'https://api.icndb.com'}),
   GRAPHIQL: bool({devDefault: true}),
   CORS: bool({devDefault: true}),
   NODE_ENV: str({devDefault: 'development'}),
