@@ -1,5 +1,5 @@
 import 'source-map-support/register';
-const env = require('./env');
+import env from './env';
 process.env = env;
 import * as chalk from 'chalk';
 import app from './src/app';

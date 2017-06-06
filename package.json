@@ -6,12 +6,13 @@
     "build": "npm run lint && tsc",
     "start": "npm run lint -- --force && run-p lint:watch build:watch",
     "test": "npm run test:all",
-    "test:integration": "node env.js && jest --config jest/integration.config.js",
-    "test:unit": "node env.js && jest --config jest/unit.config.js",
-    "test:all": "node env.js && jest",
+    "test:integration": "npm run validate:env && jest --config jest/integration.config.js",
+    "test:unit": "npm run validate:env && jest --config jest/unit.config.js",
+    "test:all": "npm run validate:env && jest",
     "lint": "tslint -t stylish 'src/**/*.ts'",
     "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
-    "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\""
+    "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
+    "validate:env": "tsc env.ts --outDir ./build/ && node ./build/env.js"
   },
   "engines": {
     "node": ">= 7.6.0"

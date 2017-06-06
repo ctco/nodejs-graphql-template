@@ -1,3 +1,3 @@
 // read env to be accessible on every test (used in integration tests)
-const env = require('../../env');
+import env from '../../env';
 process.env = env;
