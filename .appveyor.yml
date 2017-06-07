@@ -1,0 +1,30 @@
+environment:
+  global:
+    CI: true
+
+  matrix:
+    - nodejs_version: "7"     # latest 7
+    - nodejs_version: "7.6"   # latest build of 7.6
+    - nodejs_version: "7.6.0" # minimal required
+
+# build version format
+version: "{build}"
+
+cache:
+  - '%APPDATA%\npm-cache' # npm cache
+  - node_modules -> package.json # better point to npm-shrinkwrap.json or package-lock.json
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install
+
+# no appveyor build step for js project
+build: off
+
+test_script:
+  - node --version
+  - npm --version
+  - npm run test:all
+
+after_test:
+  - npm run build
