@@ -1,7 +1,8 @@
 [![Build Status](https://travis-ci.org/ctco-dev/koa-graphql-ts-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-ts-template)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-ts-template.svg)](https://greenkeeper.io/)
 
 # koa-graphql-ts-template
- 
+
 Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Features
@@ -11,7 +12,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
   - GraphiQL toggle
   - Logging levels
 - Development mode:
-  - Incremental builds 
+  - Incremental builds
   - Automatic server restart
   - Linting
 - Testing
@@ -69,21 +70,21 @@ In Windows:
 
 - TypeScript
   - [Home Page](https://www.typescriptlang.org/)
-  
+
 - Koa
   - [GitHub](https://github.com/koajs/koa)
-    
+
 - GraphQL
   - [Documentation](http://graphql.org/learn/)
   - [ctco-dev/awesome-javascript materials](https://github.com/ctco-dev/awesome-javascript#graphql)
   - [GraphQL.js](http://graphql.org/graphql-js/)
   - [Koa GraphQL.js middleware](https://github.com/chentsulin/koa-graphql)
-  
+
 - Jest
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)
 
 - winston
   - [GitHub](https://github.com/winstonjs/winston)
-  
-## Cloud Deployment 
+
+## Cloud Deployment
   - [Azure App Service](https://github.com/ctco-dev/koa-graphql-ts-template/tree/azure)
