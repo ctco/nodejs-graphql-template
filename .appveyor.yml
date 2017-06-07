@@ -28,6 +28,3 @@ test_script:
 
 after_test:
   - npm run build
-
-before_deploy:
-  - npm run build
