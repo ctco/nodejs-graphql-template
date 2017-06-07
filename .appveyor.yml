@@ -1,0 +1,23 @@
+image:
+  - Node.js 7.6.0
+  - Node.js 7.6
+  - Node.js 7
+
+environment:
+  CI: true
+
+# not sure about this
+#cache:
+#  - node_modules
+
+install:
+  - echo Hello, my friendly log reader
+  - npm install
+
+test_script:
+  - node --version
+  - npm --version
+  - npm run test:all
+
+build_script:
+  - npm run build

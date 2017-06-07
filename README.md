@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/ctco-dev/koa-graphql-ts-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-ts-template)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-ts-template.svg)](https://greenkeeper.io/)
+[![AppVeyor badge](https://ci.appveyor.com/api/projects/status/github/koa-graphql-ts-template?branch=master&svg=true)](https://ci.appveyor.com/)
 [![Dependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master)
 [![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master#info=devDependencies)
 
