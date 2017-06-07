@@ -9,11 +9,11 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Features
 
-- Configuration with `.env`:
+- Configuration with `.env`
   - CORS toggle
   - GraphiQL toggle
   - Logging levels
-- Development mode:
+- Development mode
   - Incremental builds
   - Automatic server restart
   - Linting
