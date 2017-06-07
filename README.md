@@ -1,5 +1,5 @@
 [![Build Status TravisCI](https://travis-ci.org/ctco-dev/koa-graphql-ts-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-ts-template)
-[![Build status AppVeyor](https://ci.appveyor.com/api/projects/status/fsjx5u3b4cmkn86b/branch/master?svg=true)](https://ci.appveyor.com/project/aeldar/koa-graphql-ts-template/branch/master)
+[![Build status AppVeyor](https://ci.appveyor.com/api/projects/status/github/ctco-dev/koa-graphql-ts-template?branch=master&svg=true)](https://ci.appveyor.com/project/aeldar/koa-graphql-ts-template/branch/master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-ts-template.svg)](https://greenkeeper.io/)
 [![Dependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master)
 [![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master#info=devDependencies)
