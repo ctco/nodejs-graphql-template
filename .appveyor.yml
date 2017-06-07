@@ -1,10 +1,12 @@
-image:
-  - Node.js 7.6.0
-  - Node.js 7.6
-  - Node.js 7
-
 environment:
-  CI: true
+  global:
+    CI: true
+
+  matrix:
+    # node.js
+    - nodejs_version: "7"     # latest 7
+    - nodejs_version: "7.6"   # latest build of 7.6
+    - nodejs_version: "7.6.0" # minimal required
 
 # not sure about this
 #cache:
@@ -12,6 +14,7 @@ environment:
 
 install:
   - echo Hello, my friendly log reader
+  - ps: Install-Product node $env:nodejs_version
   - npm install
 
 test_script:
