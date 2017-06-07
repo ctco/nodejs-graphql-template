@@ -11,7 +11,8 @@ environment:
 version: "{build}"
 
 cache:
-  - node_modules
+  - '%APPDATA%\npm-cache' # npm cache
+  - node_modules -> package.json # better point to npm-shrinkwrap.json or package-lock.json
 
 install:
   - ps: Install-Product node $env:nodejs_version
