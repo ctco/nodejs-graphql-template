@@ -5,9 +5,15 @@ node_js:
   - 7.6.0
   - 7.6
   - 7
+
+before_install: yarn global add greenkeeper-lockfile@
+before_script: greenkeeper-lockfile-update
+
 cache:
   directories:
     - node_modules
 script:
   - npm run test:all
   - npm run build
+  
+after_script: greenkeeper-lockfile-upload
