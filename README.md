@@ -29,7 +29,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 - node >= 7.6.0
 
-## Installation
+# Installation
 
 `$ npm i` or `$ yarn`
 
@@ -63,7 +63,7 @@ In *nix:
 
 In Windows:
 
-`set CI=true && npm test`
+`set CI=true&&npm test`
 
 ## Build (for production deployment)
 
