@@ -3,6 +3,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-ts-template.svg)](https://greenkeeper.io/)
 [![Dependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master)
 [![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master#info=devDependencies)
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 
 # koa-graphql-ts-template
 
