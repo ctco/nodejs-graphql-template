@@ -1,2 +1,2 @@
 Contributions are welcome.
-Please respect the [Code of Conduct](http://contributor-covenant.org/version/1/4/).
+Please respect the [Code of Conduct](https://github.com/ctco-dev/koa-graphql-ts-template/blob/master/CODE_OF_CONDUCT.md).
