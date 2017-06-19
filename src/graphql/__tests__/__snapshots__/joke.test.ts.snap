@@ -2,8 +2,9 @@
 
 exports[`query.joke should match default snapshot 1`] = `
 Object {
-  "joke": Object {
+  "jokeByCategory": Object {
     "categories": Array [],
+    "id": "2000",
     "text": "When God said, &quot;let there be light&quot;, Chuck Norris said, &quot;say 'please'.&quot;",
   },
 }
@@ -11,10 +12,11 @@ Object {
 
 exports[`query.joke should match nerdy snapshot 1`] = `
 Object {
-  "joke": Object {
+  "jokeByCategory": Object {
     "categories": Array [
       "NERDY",
     ],
+    "id": "1000",
     "text": "Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
   },
 }

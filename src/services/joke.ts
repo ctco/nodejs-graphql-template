@@ -18,6 +18,7 @@ const getJoke = async (category: IJokeCategoryValues): Promise<IJoke> => {
   logger.debug(`Joke service payload`, {uri, payload});
 
   return {
+    ...payload.value,
     text: payload.value.joke,
     categories: payload.value.categories && payload.value.categories.map(cat => cat.toUpperCase()),
   };

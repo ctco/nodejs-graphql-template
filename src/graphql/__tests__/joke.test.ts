@@ -41,7 +41,8 @@ describe('query.joke', () => {
   it('should match default snapshot', async () => {
     const query = `
       query Q {
-        joke {
+        jokeByCategory {
+          id
           text
           categories
         }
@@ -57,7 +58,8 @@ describe('query.joke', () => {
   it('should match nerdy snapshot', async () => {
     const query = `
       query Q {
-        joke(category: NERDY) {
+        jokeByCategory(category: NERDY) {
+          id
           text
           categories
         }

@@ -8,7 +8,7 @@ import jokeResolver from './resolvers/joke';
 const Query = new GraphQLObjectType({
   name: 'Query',
   fields: () => ({
-    joke: {
+    jokeByCategory: {
       args: {
         category: {type: JokeCategoryEnum}
       },

@@ -14,6 +14,7 @@ interface IJoke {
 const Joke = new GraphQLObjectType({
   name: 'Joke',
   fields: () => ({
+    id: {type: new GraphQLNonNull(GraphQLString)},
     text: {type: new GraphQLNonNull(GraphQLString)},
     categories: {type: new GraphQLList(JokeCategoryEnum)},
   })
