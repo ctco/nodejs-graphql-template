@@ -66,9 +66,9 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@types/http-assert/-/http-assert-1.2.0.tgz#0b82993036e86c6ff2944e033b73b57e85ccdcab"
 
-"@types/jest@20.0.0":
-  version "20.0.0"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-20.0.0.tgz#f7119f92891e150b33d67505cdd6d95585156133"
+"@types/jest@20.0.1":
+  version "20.0.1"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-20.0.1.tgz#8643a195d925a00f7bdee5257d12c3aac743f3b4"
 
 "@types/keygrip@*":
   version "1.0.1"
@@ -105,9 +105,9 @@
   version "7.0.31"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.31.tgz#80ea4d175599b2a00149c29a10a4eb2dff592e86"
 
-"@types/request-promise@4.1.34":
-  version "4.1.34"
-  resolved "https://registry.yarnpkg.com/@types/request-promise/-/request-promise-4.1.34.tgz#07275c33bc30f9e31c44740949781ffe86f23b5c"
+"@types/request-promise@4.1.35":
+  version "4.1.35"
+  resolved "https://registry.yarnpkg.com/@types/request-promise/-/request-promise-4.1.35.tgz#955d54da582dccb7d61e235a078c957f9cd7d4c7"
   dependencies:
     "@types/bluebird" "*"
     "@types/request" "*"
@@ -1159,9 +1159,9 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
-graphql@0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.10.1.tgz#75c93c2ce73aeb5bae2eefb555a8e9e39c36027d"
+graphql@0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.10.2.tgz#13edb309c056e2332b03f56a7fd34da9f1f32e2c"
   dependencies:
     iterall "^1.1.0"
 
