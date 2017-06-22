@@ -5,6 +5,8 @@
 [![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master#info=devDependencies)
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 # koa-graphql-ts-template
 
 Koa, GraphQL and TypeScript template project with batteries included.
