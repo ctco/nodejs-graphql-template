@@ -58,7 +58,7 @@ goto Deployment
 
 IF DEFINED KUDU_SELECT_NODE_VERSION_CMD (
   :: The following are done only on Windows Azure Websites environment
-  call %KUDU_SELECT_NODE_VERSION_CMD% "%BUILD_PATH%" "%DEPLOYMENT_TARGET%" "%DEPLOYMENT_TEMP%"
+  call %KUDU_SELECT_NODE_VERSION_CMD% "%DEPLOYMENT_SOURCE%" "%DEPLOYMENT_TARGET%" "%DEPLOYMENT_TEMP%"
   IF !ERRORLEVEL! NEQ 0 goto error
 
   IF EXIST "%DEPLOYMENT_TEMP%\__nodeVersion.tmp" (
@@ -90,6 +90,9 @@ goto :EOF
 :Deployment
 echo Trying to build and deploy the app...
 
+  :: 1. Select node version
+  call :SelectNodeVersion
+
 :: 2. Build and deploy
 IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 
@@ -106,9 +109,6 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
   call :ExecuteCmd !NPM_CMD! run build
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
-
-  :: 1. Select node version
-  call :SelectNodeVersion
 
   :: 2.3. KuduSync
   echo Copy build to wwwroot
