@@ -81,10 +81,10 @@
         "[resourceId('Microsoft.Web/serverFarms', parameters('hostingPlanName'))]"
       ],
       "properties": {
-        "serverFarmId": "[parameters('hostingPlanName')]"
-      },
-      "siteConfig": {
-        "nodeVersion": "8.0.0"
+        "serverFarmId": "[parameters('hostingPlanName')]",
+        "siteConfig": {
+          "nodeVersion": "8.0.0"
+        }
       },
       "resources": [
         {
@@ -94,7 +94,9 @@
           "dependsOn": [
             "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
           ],
-          "properties": {}
+          "properties": {
+            "MY_ENV_VAR_ONE": "Greetings!"
+          }
         },
         {
           "apiVersion": "2015-08-01",
