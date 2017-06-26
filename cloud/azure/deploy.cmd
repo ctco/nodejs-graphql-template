@@ -116,7 +116,7 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 
   :: 2.3 Copy node_modules to build directory
   echo Copy node_modules into build
-  xcopy "%DEPLOYMENT_SOURCE%\node_modules" "%BUILD_PATH%" /S /H /E /I /K /C /Y /Q
+  xcopy "%DEPLOYMENT_SOURCE%\node_modules" "%BUILD_PATH%\node_modules" /S /H /E /I /K /C /Y /Q
 
   :: 2.4. KuduSync
   echo Copy build to wwwroot
