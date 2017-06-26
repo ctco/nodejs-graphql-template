@@ -81,7 +81,8 @@
         "[resourceId('Microsoft.Web/serverFarms', parameters('hostingPlanName'))]"
       ],
       "properties": {
-        "serverFarmId": "[parameters('hostingPlanName')]"
+        "serverFarmId": "[parameters('hostingPlanName')]",
+        "clientAffinityEnabled": false
       },
       "resources": [
         {
