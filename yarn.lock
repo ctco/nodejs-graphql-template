@@ -2392,7 +2392,7 @@ prr@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/prr/-/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
 
-ps-tree@^1.0.1:
+ps-tree@^1.0.1, ps-tree@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ps-tree/-/ps-tree-1.1.0.tgz#b421b24140d6203f1ed3c76996b4427b08e8c014"
   dependencies:
@@ -2898,12 +2898,13 @@ ts-jest@20.0.6:
     tsconfig "^6.0.0"
     yargs "^8.0.1"
 
-tsc-watch@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.5.tgz#7701850081a0e12cca14315f7ad6524308189599"
+tsc-watch@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.6.tgz#e14e488e295897b08cf0cbf22e540c5b622f1d76"
   dependencies:
     chalk "^1.1.3"
     cross-spawn "^5.1.0"
+    ps-tree "^1.1.0"
     typescript "*"
 
 tsconfig@^6.0.0:

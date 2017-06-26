@@ -45,7 +45,7 @@
     "nock": "9.0.13",
     "npm-run-all": "4.0.2",
     "ts-jest": "20.0.6",
-    "tsc-watch": "1.0.5",
+    "tsc-watch": "1.0.6",
     "tslint": "5.4.3",
     "typescript": "2.3.4"
   },
