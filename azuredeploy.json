@@ -81,10 +81,7 @@
         "[resourceId('Microsoft.Web/serverFarms', parameters('hostingPlanName'))]"
       ],
       "properties": {
-        "serverFarmId": "[parameters('hostingPlanName')]",
-        "siteConfig": {
-          "nodeVersion": "8.0.0"
-        }
+        "serverFarmId": "[parameters('hostingPlanName')]"
       },
       "resources": [
         {
