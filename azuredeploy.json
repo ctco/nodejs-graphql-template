@@ -92,6 +92,7 @@
             "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
           ],
           "properties": {
+            "WEBSITE_NODE_DEFAULT_VERSION": "8.0.0",
             "MY_ENV_VAR_ONE": "Greetings!"
           }
         },
