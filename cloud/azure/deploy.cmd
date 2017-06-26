@@ -114,7 +114,11 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 
-  :: 2.3. KuduSync
+  :: 2.3 Copy node_modules to build directory
+  echo Copy node_modules into build
+  xcopy "%DEPLOYMENT_SOURCE%\node_modules" "%DEPLOYMENT_SOURCE%\build\node_modules" /S /H /E /K /C
+
+  :: 2.4. KuduSync
   echo Copy build to wwwroot
   call :ExecuteCmd "%KUDU_SYNC_CMD%" -v 50 -f "%BUILD_PATH%" -t "%DEPLOYMENT_TARGET%" -n "%NEXT_MANIFEST_PATH%" -p "%PREVIOUS_MANIFEST_PATH%" -i ".git;.hg;"
   IF !ERRORLEVEL! NEQ 0 goto error
