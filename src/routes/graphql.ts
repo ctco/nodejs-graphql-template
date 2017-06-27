@@ -1,5 +1,5 @@
 import * as graphqlHTTP from 'koa-graphql';
-import schema from '../graphql/schema';
+import schema from '../graphql/schema-new';
 import logger from '../logger';
 
 export default graphqlHTTP({
