@@ -119,6 +119,12 @@
     "@types/form-data" "*"
     "@types/node" "*"
 
+"@types/winston@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/winston/-/winston-2.3.3.tgz#f3eeea27c02f08aaeb60e535804b235f8378eff4"
+  dependencies:
+    "@types/node" "*"
+
 abab@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
@@ -2968,9 +2974,9 @@ type-is@^1.5.5:
     media-typer "0.3.0"
     mime-types "~2.1.15"
 
-typescript@*, typescript@2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.3.4.tgz#3d38321828231e434f287514959c37a82b629f42"
+typescript@*, typescript@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.4.1.tgz#c3ccb16ddaa0b2314de031e7e6fee89e5ba346bc"
 
 uglify-js@^2.6:
   version "2.8.29"
