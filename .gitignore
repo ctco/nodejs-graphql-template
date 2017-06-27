@@ -34,6 +34,8 @@ node_modules
 # IDEA/WebStorm
 .idea/
 *.iml
+# graphql extension for WebStorm
+graphql.config.json
 
 # testing
 /coverage
