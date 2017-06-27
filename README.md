@@ -5,6 +5,8 @@
 [![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master#info=devDependencies)
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 # koa-graphql-ts-template
 
 Koa, GraphQL and TypeScript template project with batteries included.
@@ -25,6 +27,8 @@ Koa, GraphQL and TypeScript template project with batteries included.
 - Reporting
   - Test result export to JUnit format
   - Coverage result export to Cobertura format
+- [Azure deployment configuration](cloud/azure#deployment)
+ (you can use __Deploy to Azure__ button in the top to deploy this repo instantly)  
 
 ## Required Software
 
@@ -89,6 +93,3 @@ In Windows:
 
 - winston
   - [GitHub](https://github.com/winstonjs/winston)
-
-## Cloud Deployment
-  - [Azure App Service](https://github.com/ctco-dev/koa-graphql-ts-template/tree/azure)
