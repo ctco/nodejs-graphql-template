@@ -1,0 +1,12 @@
+# _Joke_ definition
+type Joke {
+  id: String!
+  text: String!
+  categories: [JokeCategoryEnum]
+}
+
+# Available joke's categories
+enum JokeCategoryEnum {
+  NERDY
+  EXPLICIT
+}

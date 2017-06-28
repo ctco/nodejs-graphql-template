@@ -2,20 +2,12 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { makeExecutableSchema } from 'graphql-tools';
 
-import { getJoke } from '../services/joke';
-import { IJoke } from './types/joke';
-import { IJokeCategory } from './types/joke-category';
+import { schema as jokesSchema, resolvers as jokesResolvers } from './jokes';
 
 
-const typeDefs = fs.readFileSync(path.join(__dirname, './query.graphqls'), 'utf8');
-
-const resolvers = {
-  Query: {
-    jokeByCategory: (_, {category}: IJokeCategory): Promise<IJoke> => getJoke(category)
-  }
-};
+const rootSchema: string = fs.readFileSync(path.join(__dirname, './query.graphqls'), 'utf8');
 
 export default makeExecutableSchema({
-  typeDefs,
-  resolvers,
+  typeDefs: [rootSchema, jokesSchema],
+  resolvers: { ...jokesResolvers },
 });
