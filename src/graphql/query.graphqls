@@ -1,5 +1,0 @@
-# Root _Query_ definition
-type Query {
-  # Get _Joke_ by category
-  jokeByCategory(category: JokeCategoryEnum): Joke
-}

@@ -1,5 +1,5 @@
 import { getJoke } from '../../services/joke';
-import { IJoke, IJokeCategory } from './types';
+import { IJoke, IJokeCategory } from '../types/jokes';
 
 
 const resolvers = {
