@@ -58,9 +58,9 @@
   dependencies:
     "@types/node" "*"
 
-"@types/graphql@0.9.2":
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.9.2.tgz#5e3a2919a998d0bd9bb86b4b23e9630425bff1b2"
+"@types/graphql@0.9.3":
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.9.3.tgz#4a2a888e110c796eb7671bf8f9ecef229ad67749"
 
 "@types/http-assert@*":
   version "1.2.0"
