@@ -15,8 +15,7 @@
     "validate:env": "tsc env.ts --outDir ./build/ && node ./build/env.js",
     "clean": "rimraf build",
     "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build/src --verbose",
-    "copy:graphql:watch": "chokidar \"./src/**/*.{graphql,graphqls}\" -c \"npm run copy:graphql && touch server.ts\"",
-    "copywin": "xcopy /Y"
+    "copy:graphql:watch": "chokidar \"./src/**/*.{graphql,graphqls}\" -c \"npm run copy:graphql && touch server.ts\""
   },
   "engines": {
     "node": ">= 7.6.0"
