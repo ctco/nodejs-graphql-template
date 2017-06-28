@@ -9,7 +9,6 @@ type Joke {
 enum JokeCategoryEnum {
   NERDY
   EXPLICIT
-  KUKUKAKAasdfs
 }
 
 # Root _Query_ definition

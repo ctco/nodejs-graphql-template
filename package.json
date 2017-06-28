@@ -15,7 +15,7 @@
     "validate:env": "tsc env.ts --outDir ./build/ && node ./build/env.js",
     "clean": "rimraf build",
     "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build/src --verbose",
-    "copy:graphql:watch": "chokidar \"./src/**/*.{graphql,graphqls}\" -c \"(cp '{path}' 'build/{path}' || xcopy /Y \\\"'{path}'\\\" \\\"'build\\{path}'\\\") && touch server.ts\"",
+    "copy:graphql:watch": "chokidar \"./src/**/*.{graphql,graphqls}\" -c \"npm run copy:graphql && touch server.ts\"",
     "copywin": "xcopy /Y"
   },
   "engines": {
@@ -46,12 +46,9 @@
     "@types/request-promise": "4.1.35",
     "@types/winston": "2.3.3",
     "chokidar-cli": "1.2.0",
-    "copyfiles": "1.2.0",
     "cpx": "1.5.0",
-    "cpy-cli": "1.0.1",
     "jest": "20.0.4",
     "jest-junit": "1.5.1",
-    "ncp": "2.0.0",
     "nock": "9.0.13",
     "node-touch": "0.0.3",
     "npm-run-all": "4.0.2",
