@@ -14,8 +14,9 @@
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
     "validate:env": "tsc env.ts --outDir ./build/ && node ./build/env.js",
     "clean": "rimraf build",
+    "clean:graphql": "rimraf build/**/*.{gql,graphql,graphqls}",
     "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build/src --verbose",
-    "copy:graphql:watch": "chokidar \"./src/**/*.{graphql,graphqls}\" -c \"npm run copy:graphql && touch server.ts\""
+    "copy:graphql:watch": "chokidar \"./src/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch server.ts\""
   },
   "engines": {
     "node": ">= 7.6.0"
