@@ -2,6 +2,8 @@
 type Query {
   # Get _Joke_ by category
   jokeByCategory(category: JokeCategoryEnum): Joke
+  # Get my _LifeStory_
+  myLifeStory: String!
 }
 
 # _Joke_ definition
