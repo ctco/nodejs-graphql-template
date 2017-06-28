@@ -15,7 +15,7 @@
     "validate:env": "tsc env.ts --outDir ./build/ && node ./build/env.js",
     "clean": "rimraf build",
     "clean:graphql": "rimraf build/**/*.{gql,graphql,graphqls}",
-    "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build/src --verbose",
+    "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build/src",
     "copy:graphql:watch": "chokidar \"./src/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch server.ts\""
   },
   "engines": {
@@ -46,14 +46,12 @@
     "@types/nock": "8.2.1",
     "@types/request-promise": "4.1.35",
     "@types/winston": "2.3.3",
-    "cash-cp": "0.2.0",
     "cash-touch": "0.2.0",
     "chokidar-cli": "1.2.0",
     "cpx": "1.5.0",
     "jest": "20.0.4",
     "jest-junit": "1.5.1",
     "nock": "9.0.13",
-    "node-touch": "0.0.3",
     "npm-run-all": "4.0.2",
     "rimraf": "2.6.1",
     "ts-jest": "20.0.6",
