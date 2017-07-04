@@ -17,9 +17,11 @@ Koa, GraphQL and TypeScript template project with batteries included.
   - CORS toggle
   - GraphiQL toggle
   - Logging levels
-- Development mode
-  - Incremental builds
-  - Automatic server restart
+- Configurable logging 
+  - powered by `winston`  
+- Supercharged Development Mode
+  - Incremental TypeScript builds
+  - Automatic server restart on changes
   - Linting
 - Testing
   - Unit tests
