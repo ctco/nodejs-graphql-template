@@ -1,13 +1,13 @@
-[![Build Status TravisCI](https://travis-ci.org/ctco-dev/koa-graphql-ts-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-ts-template)
-[![Build status AppVeyor](https://ci.appveyor.com/api/projects/status/github/ctco-dev/koa-graphql-ts-template?branch=master&svg=true)](https://ci.appveyor.com/project/aeldar/koa-graphql-ts-template/branch/master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-ts-template.svg)](https://greenkeeper.io/)
-[![Dependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master)
-[![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/koa-graphql-ts-template/master#info=devDependencies)
+[![Build Status TravisCI](https://travis-ci.org/ctco-dev/koa-graphql-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-template)
+[![Build status AppVeyor](https://ci.appveyor.com/api/projects/status/github/ctco-dev/koa-graphql-template?branch=master&svg=true)](https://ci.appveyor.com/project/aeldar/koa-graphql-template/branch/master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-template.svg)](https://greenkeeper.io/)
+[![Dependency Status](https://david-dm.org/ctco-dev/koa-graphql-template/master.svg)](https://david-dm.org/ctco-dev/koa-graphql-template/master)
+[![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/koa-graphql-template/master#info=devDependencies)
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
-# koa-graphql-ts-template
+# koa-graphql-template
 
 Koa, GraphQL and TypeScript template project with batteries included.
 
