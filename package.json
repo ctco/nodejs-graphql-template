@@ -43,7 +43,7 @@
     "chokidar-cli": "1.2.0",
     "jest": "20.0.4",
     "jest-junit": "2.1.0",
-    "nock": "9.0.13",
+    "nock": "9.0.14",
     "npm-run-all": "4.0.2",
     "ts-jest": "20.0.7",
     "tsc-watch": "1.0.7",
