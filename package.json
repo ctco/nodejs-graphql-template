@@ -12,7 +12,7 @@
     "lint": "tslint -t stylish 'src/**/*.ts'",
     "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
-    "validate:env": "tsc env.ts --outDir ./build/ && node ./build/env.js"
+    "validate:env": "tsc env.ts --lib esnext --outDir ./build/ && node ./build/env.js"
   },
   "engines": {
     "node": ">= 7.6.0"
