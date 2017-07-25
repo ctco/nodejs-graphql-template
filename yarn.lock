@@ -119,9 +119,9 @@
     "@types/form-data" "*"
     "@types/node" "*"
 
-"@types/winston@2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@types/winston/-/winston-2.3.3.tgz#f3eeea27c02f08aaeb60e535804b235f8378eff4"
+"@types/winston@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@types/winston/-/winston-2.3.4.tgz#5bf6a5fb859f9b71b8509ab747f1eadb3a1cb1a2"
   dependencies:
     "@types/node" "*"
 
