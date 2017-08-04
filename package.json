@@ -45,7 +45,7 @@
     "jest-junit": "2.1.0",
     "nock": "9.0.14",
     "npm-run-all": "4.0.2",
-    "ts-jest": "20.0.7",
+    "ts-jest": "20.0.9",
     "tsc-watch": "1.0.7",
     "tslint": "5.5.0",
     "typescript": "2.4.2"
