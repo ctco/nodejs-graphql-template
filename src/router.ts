@@ -5,6 +5,6 @@ const router = new Router({
     prefix: '/api'
 });
 
-router.all('/graphql', graphQl);
+router.all('/graphql*', graphQl);
 
 export default router;
