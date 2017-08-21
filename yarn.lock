@@ -74,9 +74,9 @@
   version "7.0.31"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.31.tgz#80ea4d175599b2a00149c29a10a4eb2dff592e86"
 
-"@types/request-promise@4.1.36":
-  version "4.1.36"
-  resolved "https://registry.yarnpkg.com/@types/request-promise/-/request-promise-4.1.36.tgz#7b718964f3ad9a08edf42001ea9df496dc0873cf"
+"@types/request-promise@4.1.37":
+  version "4.1.37"
+  resolved "https://registry.yarnpkg.com/@types/request-promise/-/request-promise-4.1.37.tgz#2361dd0d665996d4701daae200005fffbf43c773"
   dependencies:
     "@types/bluebird" "*"
     "@types/request" "*"
