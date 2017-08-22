@@ -47,9 +47,9 @@
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@types/koa-compose/-/koa-compose-3.2.2.tgz#dc106e000bbf92a3ac900f756df47344887ee847"
 
-"@types/koa-router@7.0.22":
-  version "7.0.22"
-  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.22.tgz#92b4b533f074036250892fe35bb6329ee9242def"
+"@types/koa-router@7.0.23":
+  version "7.0.23"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.23.tgz#aa0309d28e9e1cd5723b0350841380dd749e8400"
   dependencies:
     "@types/koa" "*"
 
