@@ -38,7 +38,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 - node >= 7.6.0
 
-# Installation
+# Install
 
 `$ npm i` or `$ yarn`
 
