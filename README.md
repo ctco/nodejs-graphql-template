@@ -1,3 +1,5 @@
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Build Status TravisCI](https://travis-ci.org/ctco-dev/koa-graphql-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-template)
 [![Build Status AppVeyor](https://ci.appveyor.com/api/projects/status/wclytcth7faa5na5?svg=true)](https://ci.appveyor.com/project/trioletas/koa-graphql-template)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-template.svg)](https://greenkeeper.io/)
@@ -36,15 +38,15 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 - node >= 7.6.0
 
-# Installation
+# Install
 
 `$ npm i` or `$ yarn`
 
-## Development Mode
+## Develop
 
 `$ npm start` or `$ yarn start`
 
-## Run tests
+## Test
 
 > single test run
 
@@ -72,7 +74,7 @@ In Windows:
 
 `set CI=true&&npm test`
 
-## Build (for production deployment)
+## Build
 
 `$ npm run build` or `$ yarn build`
 
