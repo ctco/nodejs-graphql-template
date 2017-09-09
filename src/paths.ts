@@ -1,4 +1,4 @@
-const mountPath = 'api';
+const mountPath = '/api';
 const graphQlPath = 'graphql';
 const voyagerPath = 'voyager';
 

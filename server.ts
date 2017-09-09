@@ -13,7 +13,7 @@ app.listen(port, () => {
     if (process.env.GRAPHIQL) {
       console.log(`The GraphiQL App is running at:`);
       console.log();
-      console.log(`  ${chalk.cyan(`http://localhost:${port}/${mountPath}/${graphQlPath}`)}`);
+      console.log(`  ${chalk.cyan(`http://localhost:${port}${mountPath}/${graphQlPath}`)}`);
     } else {
       console.log(`The Koa App is running at:`);
       console.log();
@@ -25,7 +25,7 @@ app.listen(port, () => {
       }
       console.log(`The GraphQL Voyager App is running at:`);
       console.log();
-      console.log(`  ${chalk.cyan(`http://localhost:${port}/${mountPath}/${voyagerPath}`)}`);
+      console.log(`  ${chalk.cyan(`http://localhost:${port}${mountPath}/${voyagerPath}`)}`);
     }
   } else {
     console.log(`The Koa App is running mounted at ${mountPath}`);
