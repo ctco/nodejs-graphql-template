@@ -946,6 +946,9 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
+express-graphql@^0.6.11:
+  version "0.6.11"
+  resolved "https://registry.yarnpkg.com/express-graphql/-/express-graphql-0.6.11.tgz#3dce78d0643e78e7e3606646ce162025ba0585ab"
 expect@^21.0.0:
   version "21.0.0"
   resolved "https://registry.yarnpkg.com/expect/-/expect-21.0.0.tgz#55fbb07e989479863663975ae8e9ec51753c99ca"
@@ -968,9 +971,6 @@ expect@^21.0.2:
     jest-message-util "^21.0.2"
     jest-regex-util "^21.0.2"
 
-express-graphql@^0.6.6:
-  version "0.6.7"
-  resolved "https://registry.yarnpkg.com/express-graphql/-/express-graphql-0.6.7.tgz#1605558e11404e27a13a22b8794672d901d21baa"
   dependencies:
     accepts "^1.3.0"
     content-type "^1.0.2"
@@ -2005,12 +2005,12 @@ koa-cors@0.0.16:
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/koa-cors/-/koa-cors-0.0.16.tgz#98107993a7909e34c042986c5ec6156d77f3432e"
 
-koa-graphql@0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/koa-graphql/-/koa-graphql-0.7.2.tgz#24ed9507b13cc0aafdca149c9e6779715e29c888"
+koa-graphql@0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/koa-graphql/-/koa-graphql-0.7.3.tgz#0686f17eebfd75f025978d1789bb65fbb21e9d9c"
   dependencies:
     babel-runtime "^6.22.0"
-    express-graphql "^0.6.6"
+    express-graphql "^0.6.11"
     http-errors "^1.6.1"
     thenify "^3.2.1"
 
