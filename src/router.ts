@@ -1,16 +1,16 @@
 import * as Router from 'koa-router';
 import {koa as middleware} from 'graphql-voyager/middleware';
 import graphQl from './routes/graphql';
+import {graphQlPath, mountPath, voyagerPath} from './paths';
 
-const mountPath = 'api';
-const graphQlPath = 'graphql';
+
 
 const router = new Router({
   prefix: `/${mountPath}`
 });
 
 if (process.env.VOYAGER) {
-  router.all('/voyager', middleware({
+  router.all(`${voyagerPath}`, middleware({
     endpointUrl: `/${mountPath}/${graphQlPath}`
   }));
 }
