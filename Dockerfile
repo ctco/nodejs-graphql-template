@@ -31,7 +31,7 @@ WORKDIR /opt/app
 COPY . /opt/app
 
 RUN yarn build && \
-    yarn add --production --ignore-scripts --prefer-offline && \
+    yarn --production --ignore-scripts --prefer-offline && \
     yarn cache clean
 
 # Run
