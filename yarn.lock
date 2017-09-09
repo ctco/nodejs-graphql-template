@@ -27,9 +27,9 @@
   dependencies:
     "@types/node" "*"
 
-"@types/graphql@0.10.2":
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.10.2.tgz#d7c79acbaa17453b6681c80c34b38fcb10c4c08c"
+"@types/graphql@0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.11.0.tgz#19a3f9d52f168e6a9ad5ce4b762a5062ea55d6fd"
 
 "@types/http-assert@*":
   version "1.2.0"
@@ -561,6 +561,7 @@ center-align@^0.1.1:
 
 
 chalk@2.1.0, chalk@^2.0.1, chalk@^2.1.0:
+
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.1.0.tgz#ac5becf14fa21b99c6c92ca7a7d7cfd5b17e743e"
   dependencies:
@@ -3180,7 +3181,6 @@ typescript@*:
 typescript@2.5.2:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.2.tgz#038a95f7d9bbb420b1bf35ba31d4c5c1dd3ffe34"
-
 uglify-js@^2.6:
   version "2.8.29"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.29.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
