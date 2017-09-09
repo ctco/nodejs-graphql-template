@@ -1276,7 +1276,7 @@ graphql-request@^1.2.0:
   dependencies:
     isomorphic-fetch "^2.2.1"
 
-graphql-voyager@^1.0.0-rc.8:
+graphql-voyager@1.0.0-rc.8:
   version "1.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.0.0-rc.8.tgz#1ae1f378f083b0379eda40b2da9967758bd404e8"
   dependencies:
@@ -2027,6 +2027,10 @@ koa-graphql@0.7.3:
     express-graphql "^0.6.11"
     http-errors "^1.6.1"
     thenify "^3.2.1"
+
+koa-heartbeat@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/koa-heartbeat/-/koa-heartbeat-0.1.2.tgz#72f9cc278b42553d4156b762489cc981220d44b3"
 
 koa-is-json@^1.0.0:
   version "1.0.0"

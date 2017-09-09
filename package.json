@@ -26,6 +26,7 @@
     "koa-convert": "1.2.0",
     "koa-cors": "0.0.16",
     "koa-graphql": "0.7.3",
+    "koa-heartbeat": "0.1.2",
     "koa-router": "7.2.1",
     "moment": "2.18.1",
     "request-promise": "4.2.1",
