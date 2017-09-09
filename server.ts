@@ -1,5 +1,6 @@
 import 'source-map-support/register';
 import env from './env';
+
 process.env = env;
 import * as chalk from 'chalk';
 import app from './src/app';
@@ -16,6 +17,14 @@ app.listen(port, () => {
       console.log(`The Koa App is running at:`);
       console.log();
       console.log(`  ${chalk.cyan(`http://localhost:${port}`)}`);
+    }
+    if (process.env.VOYAGER) {
+      if (process.env.GRAPHIQL) {
+        console.log();
+      }
+      console.log(`The GraphQL Voyager App is running at:`);
+      console.log();
+      console.log(`  ${chalk.cyan(`http://localhost:${port}/api/voyager`)}`);
     }
   } else {
     console.log(`The Koa App is running`);

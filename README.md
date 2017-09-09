@@ -18,6 +18,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
 - Configuration with `.env`
   - CORS toggle
   - GraphiQL toggle
+  - GraphQL Voyager toggle
   - Logging levels
 - Configurable logging 
   - powered by `winston`  
@@ -91,6 +92,7 @@ In Windows:
   - [ctco-dev/awesome-javascript materials](https://github.com/ctco-dev/awesome-javascript#graphql)
   - [GraphQL.js](http://graphql.org/graphql-js/)
   - [Koa GraphQL.js middleware](https://github.com/chentsulin/koa-graphql)
+  - [GraphQL Voyager](https://apis.guru/graphql-voyager/)
 
 - Jest
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)
