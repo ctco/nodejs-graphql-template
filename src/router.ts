@@ -8,11 +8,11 @@ const router = new Router({
 });
 
 if (process.env.VOYAGER) {
-  router.all(`${voyagerPath}`, middleware({
-    endpointUrl: `${mountPath}/${voyagerPath}`
+  router.all(`/${voyagerPath}`, middleware({
+    endpointUrl: `${mountPath}/${graphQlPath}`
   }));
 }
 
-router.all(`${graphQlPath}*`, graphQl);
+router.all(`/${graphQlPath}*`, graphQl);
 
 export default router;
