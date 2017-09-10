@@ -1276,7 +1276,7 @@ graphql-request@^1.2.0:
   dependencies:
     isomorphic-fetch "^2.2.1"
 
-graphql-voyager@^1.0.0-rc.8:
+graphql-voyager@1.0.0-rc.8:
   version "1.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.0.0-rc.8.tgz#1ae1f378f083b0379eda40b2da9967758bd404e8"
   dependencies:
@@ -2994,7 +2994,13 @@ sntp@1.x.x:
   dependencies:
     hoek "2.x.x"
 
-source-map-support@0.4.17, source-map-support@^0.4.15, source-map-support@^0.4.4:
+source-map-support@0.4.18:
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.18.tgz#0286a6de8be42641338594e97ccea75f0a2c585f"
+  dependencies:
+    source-map "^0.5.6"
+
+source-map-support@^0.4.15, source-map-support@^0.4.4:
   version "0.4.17"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.17.tgz#6f2150553e6375375d0ccb3180502b78c18ba430"
   dependencies:
