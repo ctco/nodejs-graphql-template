@@ -80,9 +80,9 @@
   dependencies:
     "@types/node" "*"
 
-"@types/graphql@0.11.1":
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.11.1.tgz#f07f5f6835895740bdd4c457aa9b0b429118758e"
+"@types/graphql@0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.11.2.tgz#758c278a042b13943fc7d5a35261e3fbd3c34195"
 
 "@types/http-assert@*":
   version "1.2.0"
@@ -1276,7 +1276,7 @@ graphql-request@^1.2.0:
   dependencies:
     isomorphic-fetch "^2.2.1"
 
-graphql-voyager@^1.0.0-rc.8:
+graphql-voyager@1.0.0-rc.8:
   version "1.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.0.0-rc.8.tgz#1ae1f378f083b0379eda40b2da9967758bd404e8"
   dependencies:
@@ -2227,17 +2227,13 @@ minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@0.0.8:
+minimist@0.0.8, minimist@~0.0.1:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
 minimist@^1.1.1, minimist@^1.2.0, minimist@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
-
-minimist@~0.0.1:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
 
 "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1:
   version "0.5.1"
