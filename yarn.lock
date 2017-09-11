@@ -1270,30 +1270,30 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-graphql-request@^1.2.0:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.3.4.tgz#94d5f2e6644d9d9cbce0d06953e100c30e5cb633"
+graphql-request@^1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.3.6.tgz#7257d9c539e747b7ef8dbafc04e4a4231ca94464"
   dependencies:
     isomorphic-fetch "^2.2.1"
 
-graphql-voyager@1.0.0-rc.8:
-  version "1.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.0.0-rc.8.tgz#1ae1f378f083b0379eda40b2da9967758bd404e8"
+graphql-voyager@1.0.0-rc.9:
+  version "1.0.0-rc.9"
+  resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.0.0-rc.9.tgz#82ad433274ba1325b6c8a567fb5c59ba83d48a60"
   dependencies:
     "@f/animate" "^1.0.1"
     classnames "^2.2.5"
     clipboard "^1.7.1"
-    graphql-request "^1.2.0"
+    graphql-request "^1.3.6"
     lodash "^4.17.2"
     marked "^0.3.6"
-    react-modal "^2.2.1"
-    react-redux "^5.0.5"
+    react-modal "^2.3.2"
+    react-redux "^5.0.6"
     react-style-proptype "^3.0.0"
     react-toolbox "^2.0.0-beta.7"
     redux "^3.7.1"
     redux-thunk "^2.1.0"
     reselect "^3.0.1"
-    svg-pan-zoom "^3.5.1"
+    svg-pan-zoom "^3.5.2"
 
 graphql@0.11.3:
   version "0.11.3"
@@ -2678,7 +2678,7 @@ react-dom-factories@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-dom-factories/-/react-dom-factories-1.0.1.tgz#c50692ac5ff1adb39d86dfe6dbe3485dacf58455"
 
-react-modal@^2.2.1:
+react-modal@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-2.3.2.tgz#af9d625da218461de3e87551609dfca12d8d4946"
   dependencies:
@@ -2686,7 +2686,7 @@ react-modal@^2.2.1:
     prop-types "^15.5.10"
     react-dom-factories "^1.0.0"
 
-react-redux@^5.0.5:
+react-redux@^5.0.6:
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.6.tgz#23ed3a4f986359d68b5212eaaa681e60d6574946"
   dependencies:
@@ -3166,7 +3166,7 @@ supports-color@^4.0.0:
   dependencies:
     has-flag "^2.0.0"
 
-svg-pan-zoom@^3.5.1:
+svg-pan-zoom@^3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/svg-pan-zoom/-/svg-pan-zoom-3.5.2.tgz#18a2d68c27d15ffc562d4a7f9925519269f6abd0"
 
@@ -3282,9 +3282,9 @@ ts-jest@21.0.0:
     source-map-support "^0.4.4"
     yargs "^8.0.1"
 
-tsc-watch@1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.7.tgz#f540d312a82d8bf42f9b037f6b077a856df18cf2"
+tsc-watch@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.8.tgz#d458464f53503469410378bf3bbb1c4e47304f1e"
   dependencies:
     chalk "^1.1.3"
     cross-spawn "^5.1.0"
