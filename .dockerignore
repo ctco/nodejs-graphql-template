@@ -6,3 +6,5 @@ cloud
 .idea
 build
 *.md
+LICENSE
+azuredeploy.json

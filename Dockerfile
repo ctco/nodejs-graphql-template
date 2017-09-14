@@ -1,36 +1,42 @@
-FROM node:8.4.0-slim
-
 # Prepare
+
+FROM node:8.4.0-alpine AS base
 
 RUN mkdir -p /opt/app
 
-ENV PORT 3001
-ENV HOST 0.0.0.0
-EXPOSE $PORT
-
-HEALTHCHECK CMD curl -fs http://$HOST:$PORT/healthz || exit 1
+WORKDIR /opt/app
 
 # Install
 
-WORKDIR /opt
-COPY package.json /opt
-COPY yarn.lock /opt
+FROM base AS dependencies
+
+COPY package.json .
+COPY yarn.lock .
 
 RUN yarn
 
-ENV PATH /opt/node_modules/.bin:$PATH
-
 # Build
 
-WORKDIR /opt/app
+FROM base AS build
+
+COPY --from=dependencies /opt/app/node_modules ./node_modules
 COPY . /opt/app
 
 RUN yarn build && \
-    yarn --production --ignore-scripts --prefer-offline && \
-    yarn cache clean
+    yarn --production --ignore-scripts --prefer-offline
 
 # Run
 
+FROM base AS run
+
+COPY --from=build /opt/app .
+
+ENV PORT 3001
+ENV HOST 0.0.0.0
 ENV NODE_ENV production
+
+HEALTHCHECK CMD curl -fs http://$HOST:$PORT/healthz || exit 1
+
+EXPOSE $PORT
 
 CMD [ "node", "build/server.js" ]
