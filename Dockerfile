@@ -4,11 +4,6 @@ FROM node:8.4.0-slim
 
 RUN mkdir -p /opt/app
 
-ENV TINI_VERSION v0.16.1
-ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
-RUN chmod +x /tini
-ENTRYPOINT ["/tini", "--"]
-
 ENV PORT 3001
 ENV HOST 0.0.0.0
 EXPOSE $PORT
