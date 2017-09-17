@@ -44,13 +44,15 @@ or
 
 - Docker
 
-# Install
+## Install
 
 `$ npm i` or `$ yarn` or `$ docker-compose up`
 
 ## Develop
 
 `$ npm start` or `$ yarn start` or `$ docker-compose up`
+
+If you have issues with `src` folder not properly mounting on windows virtual box, see [this](https://github.com/docker/compose/issues/2548#issuecomment-232922650) comment for remedy.
 
 ## Test
 
