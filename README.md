@@ -15,6 +15,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Features
 
+- Docker :whale: configuration for production deployment and development work flow
 - Configuration with `.env`
   - CORS toggle
   - GraphiQL toggle
@@ -37,15 +38,19 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Required Software
 
-- node >= 7.6.0
+- node >= 7.6.0 & npm / yarn
+
+or
+
+- Docker
 
 # Install
 
-`$ npm i` or `$ yarn`
+`$ npm i` or `$ yarn` or `$ docker-compose up`
 
 ## Develop
 
-`$ npm start` or `$ yarn start`
+`$ npm start` or `$ yarn start` or `$ docker-compose up`
 
 ## Test
 
@@ -77,7 +82,7 @@ In Windows:
 
 ## Build
 
-`$ npm run build` or `$ yarn build`
+`$ npm run build` or `$ yarn build` or `$ docker build .`
 
 ## Tech Stack
 
@@ -99,3 +104,6 @@ In Windows:
 
 - winston
   - [GitHub](https://github.com/winstonjs/winston)
+  
+- Docker
+  - [Home Page](https://www.docker.com)

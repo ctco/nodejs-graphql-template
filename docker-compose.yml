@@ -1,0 +1,16 @@
+version: '3'
+services:
+  api:
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./src:/opt/app/src
+    ports:
+      - 3001:3001
+    environment:
+      - SHELL=/bin/sh
+      - NODE_ENV=development
+      - PORT=3001
+      - HOST=0.0.0.0

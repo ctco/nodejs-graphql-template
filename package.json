@@ -10,7 +10,7 @@
     "test:unit": "npm run validate:env && jest --config jest/unit.config.js",
     "test:all": "npm run validate:env && jest",
     "lint": "tslint -t stylish 'src/**/*.ts'",
-    "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
+    "build:watch": "node node_modules/tsc-watch --onSuccess \"node build/server.js\"",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
     "validate:env": "tsc env.ts --lib esnext --outDir ./build/ && node ./build/env.js"
   },
