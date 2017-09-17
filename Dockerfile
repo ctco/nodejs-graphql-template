@@ -43,4 +43,6 @@ HEALTHCHECK CMD curl -fs http://$HOST:$PORT/healthz || exit 1
 
 EXPOSE $PORT
 
+USER node
+
 CMD [ "node", "build/server.js" ]
