@@ -50,7 +50,7 @@ or
 
 ## Develop
 
-`$ npm start` or `$ yarn start` or `$ docker-compose up`
+`$ npm start` or `$ yarn start` or `$ docker-compose up` (alternatively, `$ docker-compose up --build` if you need to rebuild an image)
 
 If you have issues with `src` folder not properly mounting on windows virtual box, see [this](https://github.com/docker/compose/issues/2548#issuecomment-232922650) comment for remedy.
 
