@@ -6,5 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
+    volumes:
+      - ./src:/opt/app/src
     environment:
       - NODE_ENV=development
