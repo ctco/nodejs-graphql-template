@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sut:
+    tty: true
+    command: test
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      - NODE_ENV=development

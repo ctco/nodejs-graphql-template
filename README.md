@@ -15,7 +15,7 @@ Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Features
 
-- Docker :whale: configuration for production deployment and development work flow
+- Docker :whale: configuration for production deployment, development and test
 - Configuration with `.env`
   - CORS toggle
   - GraphiQL toggle
@@ -46,13 +46,15 @@ or
 
 ## Install
 
-`$ npm i` or `$ yarn` or `$ docker-compose up`
+- npm: `$ npm i`
+- yarn: `$ yarn`
+- Docker: `$ docker-compose up`
 
 ## Develop
 
-`$ npm start` or `$ yarn start` or `$ docker-compose up` (alternatively, `$ docker-compose up --build` if you need to rebuild an image)
-
-If you have issues with `src` folder not properly mounting on windows virtual box, see [this](https://github.com/docker/compose/issues/2548#issuecomment-232922650) comment for remedy.
+- npm: `$ npm start`
+- yarn: `$ yarn start`
+- Docker: `$ docker-compose up` (alternatively, `$ docker-compose up --build` if you need to rebuild an image)
 
 ## Test
 
@@ -60,15 +62,21 @@ If you have issues with `src` folder not properly mounting on windows virtual bo
 
 ### Run unit tests
 
-`$ npm run test:unit`
+- npm: `$ npm run test:unit`
+- yarn: `$ yarn test:unit`
+- Docker: `$ docker-compose -f docker-compose.test.yml run sut test:unit`
 
 ### Run integration tests
 
-`$ npm run test:integration`
+- npm: `$ npm run test:integration`
+- yarn: `$ yarn test:integration`
+- Docker: `$ docker-compose -f docker-compose.test.yml run sut test:integration`
 
 ### Run all tests
 
-`$ npm test`
+- npm: `$ npm test`
+- yarn: `$ yarn test`
+- Docker: `$ docker-compose -f docker-compose.test.yml run sut`
 
 ### Generate coverage reports
 
@@ -81,6 +89,10 @@ In *nix:
 In Windows:
 
 `set CI=true&&npm test`
+
+In Docker:
+
+`docker-compose -f docker-compose.test.yml run -e CI=true sut`
 
 ## Build
 
