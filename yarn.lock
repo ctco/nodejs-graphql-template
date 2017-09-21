@@ -152,9 +152,9 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
-"@types/winston@2.3.5":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@types/winston/-/winston-2.3.5.tgz#d8063460a7881e55a9dbfc41fcdfb5063312f3fb"
+"@types/winston@2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@types/winston/-/winston-2.3.6.tgz#0f0954b9e16abd40598dc6e9cc2ea43044237997"
   dependencies:
     "@types/node" "*"
 
