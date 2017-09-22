@@ -1,17 +1,17 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Build Status TravisCI](https://travis-ci.org/ctco-dev/koa-graphql-template.svg?branch=master)](https://travis-ci.org/ctco-dev/koa-graphql-template)
-[![Build Status AppVeyor](https://ci.appveyor.com/api/projects/status/wclytcth7faa5na5?svg=true)](https://ci.appveyor.com/project/trioletas/koa-graphql-template)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/koa-graphql-template.svg)](https://greenkeeper.io/)
-[![Dependency Status](https://david-dm.org/ctco-dev/koa-graphql-template/master.svg)](https://david-dm.org/ctco-dev/koa-graphql-template/master)
-[![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/koa-graphql-template/master#info=devDependencies)
+[![Build Status TravisCI](https://travis-ci.org/ctco-dev/nodejs-graphql-template.svg?branch=master)](https://travis-ci.org/ctco-dev/nodejs-graphql-template)
+[![Build Status AppVeyor](https://ci.appveyor.com/api/projects/status/wclytcth7faa5na5?svg=true)](https://ci.appveyor.com/project/trioletas/nodejs-graphql-template)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ctco-dev/nodejs-graphql-template.svg)](https://greenkeeper.io/)
+[![Dependency Status](https://david-dm.org/ctco-dev/koa-graphql-template/master.svg)](https://david-dm.org/ctco-dev/nodejs-graphql-template/master)
+[![devDependency Status](https://david-dm.org/ctco-dev/koa-graphql-template/master/dev-status.svg)](https://david-dm.org/ctco-dev/nodejs-graphql-template/master#info=devDependencies)
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
-# koa-graphql-template
+# nodejs-graphql-template
 
-Koa, GraphQL and TypeScript template project with batteries included.
+Node.js, Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Features
 

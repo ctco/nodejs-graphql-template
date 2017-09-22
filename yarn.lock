@@ -80,9 +80,9 @@
   dependencies:
     "@types/node" "*"
 
-"@types/graphql@0.11.3":
-  version "0.11.3"
-  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.11.3.tgz#1b93a60b2974c244588eaf72471058379532f4d9"
+"@types/graphql@0.11.4":
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.11.4.tgz#6e067838246ec741be3950211323726a77147472"
 
 "@types/http-assert@*":
   version "1.2.0"
@@ -152,9 +152,9 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
-"@types/winston@2.3.5":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@types/winston/-/winston-2.3.5.tgz#d8063460a7881e55a9dbfc41fcdfb5063312f3fb"
+"@types/winston@2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@types/winston/-/winston-2.3.6.tgz#0f0954b9e16abd40598dc6e9cc2ea43044237997"
   dependencies:
     "@types/node" "*"
 
@@ -2269,9 +2269,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-nock@9.0.14:
-  version "9.0.14"
-  resolved "https://registry.yarnpkg.com/nock/-/nock-9.0.14.tgz#2211550253173ce298bcd89fca825e83813ca72b"
+nock@9.0.18:
+  version "9.0.18"
+  resolved "https://registry.yarnpkg.com/nock/-/nock-9.0.18.tgz#814b6af376b8399d1bbcbaa17f1a458c653a719b"
   dependencies:
     chai ">=1.9.2 <4.0.0"
     debug "^2.2.0"
