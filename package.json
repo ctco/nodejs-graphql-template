@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "chalk": "2.1.0",
-    "envalid": "4.1.0",
+    "envalid": "4.1.1",
     "graphql": "0.11.7",
     "graphql-voyager": "1.0.0-rc.9",
     "koa": "2.3.0",
