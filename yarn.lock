@@ -2262,9 +2262,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-nock@9.0.25:
-  version "9.0.25"
-  resolved "https://registry.yarnpkg.com/nock/-/nock-9.0.25.tgz#0eb26c8a1f602919eaa5b488cd99cfa34b259390"
+nock@9.0.26:
+  version "9.0.26"
+  resolved "https://registry.yarnpkg.com/nock/-/nock-9.0.26.tgz#aace5ee79ff2372c4a770f4921a4bac08588a29d"
   dependencies:
     chai ">=1.9.2 <4.0.0"
     debug "^2.2.0"
