@@ -49,7 +49,7 @@
     "ts-jest": "21.1.2",
     "tsc-watch": "1.0.8",
     "tslint": "5.8.0",
-    "typescript": "2.5.3"
+    "typescript": "2.6.1"
   },
   "jest-junit": {
     "output": "./reports/test/junit.xml"
