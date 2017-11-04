@@ -2,7 +2,7 @@ import 'source-map-support/register';
 import env from './env';
 
 process.env = env;
-import * as chalk from 'chalk';
+import chalk from 'chalk';
 import app from './src/app';
 import {graphQlPath, mountPath, voyagerPath} from './src/paths';
 
