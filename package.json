@@ -10,7 +10,7 @@
     "test:unit": "npm run validate:env && jest --config jest/unit.config.js",
     "test:all": "npm run validate:env && jest",
     "lint": "tslint -t stylish 'src/**/*.ts'",
-    "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
+    "build:watch": "node node_modules/tsc-watch --onSuccess \"node build/server.js\"",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
     "validate:env": "tsc env.ts --lib esnext --outDir ./build/ && node ./build/env.js"
   },
@@ -26,8 +26,10 @@
     "koa-convert": "1.2.0",
     "koa-cors": "0.0.16",
     "koa-graphql": "0.7.3",
+    "koa-heartbeat": "0.1.2",
     "koa-router": "7.2.1",
     "moment": "2.19.1",
+    "request": "2.83.0",
     "request-promise": "4.2.1",
     "source-map-support": "0.5.0",
     "winston": "2.4.0"
