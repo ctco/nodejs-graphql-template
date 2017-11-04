@@ -10,7 +10,7 @@
     "test:unit": "npm run validate:env && jest --config jest/unit.config.js",
     "test:all": "npm run validate:env && jest",
     "lint": "tslint -t stylish 'src/**/*.ts'",
-    "build:watch": "tsc-watch --onSuccess \"node build/server.js\"",
+    "build:watch": "node node_modules/tsc-watch --onSuccess \"node build/server.js\"",
     "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
     "validate:env": "tsc env.ts --lib esnext --outDir ./build/ && node ./build/env.js"
   },
@@ -26,8 +26,10 @@
     "koa-convert": "1.2.0",
     "koa-cors": "0.0.16",
     "koa-graphql": "0.7.3",
+    "koa-heartbeat": "0.1.2",
     "koa-router": "7.2.1",
     "moment": "2.19.1",
+    "request": "2.83.0",
     "request-promise": "4.2.1",
     "source-map-support": "0.5.0",
     "winston": "2.4.0"
@@ -40,16 +42,16 @@
     "@types/koa-router": "7.0.23",
     "@types/nock": "8.2.1",
     "@types/request-promise": "4.1.38",
-    "@types/winston": "2.3.6",
+    "@types/winston": "2.3.7",
     "chokidar-cli": "1.2.0",
     "jest": "21.2.1",
     "jest-junit": "3.1.0",
-    "nock": "9.0.24",
+    "nock": "9.0.27",
     "npm-run-all": "4.1.1",
     "ts-jest": "21.1.2",
     "tsc-watch": "1.0.8",
     "tslint": "5.8.0",
-    "typescript": "2.5.3"
+    "typescript": "2.6.1"
   },
   "jest-junit": {
     "output": "./reports/test/junit.xml"
