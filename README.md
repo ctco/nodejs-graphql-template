@@ -42,7 +42,7 @@ Node.js, Koa, GraphQL and TypeScript template project with batteries included.
 
 or
 
-- Docker
+- Docker >= 17.05
 
 ## Install
 
@@ -54,9 +54,9 @@ or
 
 - npm: `$ npm start`
 - yarn: `$ yarn start`
-- Docker: `$ docker-compose up` (alternatively, `$ docker-compose up --build` if you need to rebuild an image)
+- Docker: `$ docker-compose up --build`
 
-If you have issues with `src` folder not properly mounting on windows virtual box, see [this](https://github.com/docker/compose/issues/2548#issuecomment-232922650) comment for remedy.
+If you encounter issues with `src` folder not properly mounting on windows virtual box, see [this](https://github.com/docker/compose/issues/2548#issuecomment-232922650) comment for remedy.
 
 ## Test
 
