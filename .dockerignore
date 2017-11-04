@@ -2,9 +2,7 @@
 
 .git
 node_modules
-cloud
 .idea
 build
 *.md
 LICENSE
-azuredeploy.json
