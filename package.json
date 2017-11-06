@@ -22,7 +22,7 @@
     "envalid": "4.1.1",
     "graphql": "0.11.7",
     "graphql-voyager": "1.0.0-rc.9",
-    "koa": "2.3.0",
+    "koa": "2.4.0",
     "koa-convert": "1.2.0",
     "koa-cors": "0.0.16",
     "koa-graphql": "0.7.3",
