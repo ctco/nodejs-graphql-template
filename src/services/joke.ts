@@ -1,7 +1,6 @@
 import * as request from 'request-promise';
 import logger from '../logger';
-import { IJoke } from '../graphql/types/joke';
-import { IJokeCategoryValues } from '../graphql/types/joke-category';
+import { IJoke, IJokeCategoryValues } from '../graphql/types/jokes';
 
 const getJoke = async (category: IJokeCategoryValues): Promise<IJoke> => {
   const uri =  `${process.env.JOKE_SERVICE_URI}/jokes/random${category ? `?limitTo=[${category.toLowerCase()}]` : ''}`;

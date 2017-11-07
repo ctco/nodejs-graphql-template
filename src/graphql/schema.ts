@@ -1,8 +1,13 @@
-import { GraphQLSchema } from 'graphql';
-import query from './query';
+import * as fs from 'fs';
+import * as path from 'path';
+import { makeExecutableSchema } from 'graphql-tools';
 
-const schema = new GraphQLSchema(
-  {query}
-);
+import resolvers from './resolvers';
 
-export default schema;
+
+const typeDefs: string = fs.readFileSync(path.join(__dirname, './schema.graphqls'), 'utf8');
+
+export default makeExecutableSchema({
+  typeDefs,
+  resolvers,
+});
