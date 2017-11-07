@@ -1,0 +1,20 @@
+# Root _Query_ definition
+type Query {
+  # Get _Joke_ by category
+  jokeByCategory(category: JokeCategoryEnum): Joke
+  # Get my _LifeStory_
+  myLifeStory: String!
+}
+
+# _Joke_ definition
+type Joke {
+  id: String!
+  text: String!
+  categories: [JokeCategoryEnum]
+}
+
+# Available joke's categories
+enum JokeCategoryEnum {
+  NERDY
+  EXPLICIT
+}
