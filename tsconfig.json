@@ -10,7 +10,7 @@
     "pretty": true,
     "strictNullChecks": true,
     "sourceMap": true,
-    "lib": ["ES2017"]
+    "lib": ["ESNext"]
   },
   "exclude": [
     "node_modules",

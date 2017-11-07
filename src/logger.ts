@@ -14,6 +14,6 @@ const logger = new (winston.Logger)({
   ]
 });
 
-logger.level = process.env.LOG_LEVEL;
+logger.level = process.env.LOG_LEVEL || 'info';
 
 export default logger;
