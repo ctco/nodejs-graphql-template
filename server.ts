@@ -4,7 +4,7 @@ import env from './env';
 process.env = env;
 import chalk from 'chalk';
 import app from './src/app';
-import {graphQlPath, mountPath, voyagerPath} from './src/paths';
+import {graphqlPath, voyagerPath} from './src/paths';
 
 const port = process.env.PORT || 3001;
 
@@ -13,7 +13,7 @@ app.listen(port, () => {
     if (process.env.GRAPHIQL) {
       console.log(`The GraphiQL App is running at:`);
       console.log();
-      console.log(`  ${chalk.cyan(`http://localhost:${port}${mountPath}/${graphQlPath}`)}`);
+      console.log(`  ${chalk.cyan(`http://localhost:${port}/${graphqlPath}`)}`);
     } else {
       console.log(`The Koa App is running at:`);
       console.log();
@@ -25,9 +25,9 @@ app.listen(port, () => {
       }
       console.log(`The GraphQL Voyager App is running at:`);
       console.log();
-      console.log(`  ${chalk.cyan(`http://localhost:${port}${mountPath}/${voyagerPath}`)}`);
+      console.log(`  ${chalk.cyan(`http://localhost:${port}/${voyagerPath}`)}`);
     }
   } else {
-    console.log(`The Koa App is running mounted at ${mountPath}`);
+    console.log(`The Koa App is running`);
   }
 });

@@ -4,9 +4,7 @@ environment:
 
   matrix:
     - nodejs_version: "8"     # latest 8
-    - nodejs_version: "7"     # latest 7
-    - nodejs_version: "7.6"   # latest build of 7.6
-    - nodejs_version: "7.6.0" # minimal required
+    - nodejs_version: "8.1.4" # minimal required
 
 # build version format
 version: "{build}"
