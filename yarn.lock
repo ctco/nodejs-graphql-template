@@ -114,9 +114,9 @@
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@types/koa-compose/-/koa-compose-3.2.2.tgz#dc106e000bbf92a3ac900f756df47344887ee847"
 
-"@types/koa-router@7.0.23":
-  version "7.0.23"
-  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.23.tgz#aa0309d28e9e1cd5723b0350841380dd749e8400"
+"@types/koa-router@7.0.24":
+  version "7.0.24"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.24.tgz#24fbba35f9a7edffadfd57c96963f8421a85576b"
   dependencies:
     "@types/koa" "*"
 
@@ -2512,9 +2512,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-nock@9.0.28:
-  version "9.0.28"
-  resolved "https://registry.yarnpkg.com/nock/-/nock-9.0.28.tgz#99b879ce0e4827f421e42e47356287d6b4c2b58c"
+nock@9.0.22:
+  version "9.0.22"
+  resolved "https://registry.yarnpkg.com/nock/-/nock-9.0.22.tgz#f6eb8ea58c6232dead857484370c2e46f010a087"
   dependencies:
     chai ">=1.9.2 <4.0.0"
     debug "^2.2.0"
