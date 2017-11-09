@@ -34,7 +34,7 @@ Node.js, Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Required Software
 
-- node >= 7.6.0 & npm / yarn
+- node >= 8.1.4 & npm / yarn
 
 or
 
@@ -106,10 +106,11 @@ In Docker:
 
 - GraphQL
   - [Documentation](http://graphql.org/learn/)
-  - [ctco-dev/awesome-javascript materials](https://github.com/ctco-dev/awesome-javascript#graphql)
   - [GraphQL.js](http://graphql.org/graphql-js/)
-  - [Koa GraphQL.js middleware](https://github.com/chentsulin/koa-graphql)
+  - [graphql-tools](https://github.com/apollographql/graphql-tools)
+  - [apollo-server](https://github.com/apollographql/apollo-server)
   - [GraphQL Voyager](https://apis.guru/graphql-voyager/)
+  - [ctco-dev/awesome-javascript materials](https://github.com/ctco-dev/awesome-javascript#graphql)
 
 - Jest
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)

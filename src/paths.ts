@@ -1,9 +1,9 @@
-const mountPath = '/api';
-const graphQlPath = 'graphql';
+const graphqlPath = 'graphql';
+const graphiqlPath = 'graphiql';
 const voyagerPath = 'voyager';
 
 export {
-  mountPath,
-  graphQlPath,
-  voyagerPath
+  graphqlPath,
+  graphiqlPath,
+  voyagerPath,
 };
