@@ -1,6 +1,6 @@
 {
   "files": [
-    "server.ts"
+    "server/server.ts"
   ],
   "compilerOptions": {
     "outDir": "./build",

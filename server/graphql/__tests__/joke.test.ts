@@ -13,9 +13,9 @@ beforeAll(() => {
     type: 'success',
     value: {
       id: 2000,
-      joke: "When God said, &quot;let there be light&quot;, Chuck Norris said, &quot;say 'please'.&quot;",
-      categories: []
-    }
+      joke: `Chuck Norris can write to an output stream.`,
+      categories: [],
+    },
   };
   nock(process.env.JOKE_SERVICE_URI)
     .get('/jokes/random')
@@ -25,15 +25,15 @@ beforeAll(() => {
     type: 'success',
     value: {
       id: 1000,
-      joke: "Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
+      joke: `Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.`,
       categories: [
-        'nerdy'
-      ]
-    }
+        'nerdy',
+      ],
+    },
   };
   nock(process.env.JOKE_SERVICE_URI)
     .get('/jokes/random')
-    .query({limitTo: '[nerdy]'})
+    .query({ limitTo: '[nerdy]' })
     .reply(200, nerdyResponse);
 });
 
@@ -50,7 +50,7 @@ describe('query.joke', () => {
     `;
 
     const result = await graphql(schema, query, rootValue, context);
-    const {data} = result;
+    const { data } = result;
 
     expect(data).toMatchSnapshot();
   });
@@ -67,7 +67,7 @@ describe('query.joke', () => {
     `;
 
     const result = await graphql(schema, query, rootValue, context);
-    const {data} = result;
+    const { data } = result;
 
     expect(data).toMatchSnapshot();
   });

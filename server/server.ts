@@ -3,8 +3,8 @@ import env from './env';
 
 process.env = env;
 import chalk from 'chalk';
-import app from './src/app';
-import {graphqlPath, voyagerPath} from './src/paths';
+import app from './app';
+import { graphqlPath, voyagerPath } from './paths';
 
 const port = process.env.PORT || 3001;
 

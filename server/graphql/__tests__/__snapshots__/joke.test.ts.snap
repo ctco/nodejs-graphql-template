@@ -5,7 +5,7 @@ Object {
   "jokeByCategory": Object {
     "categories": Array [],
     "id": "2000",
-    "text": "When God said, &quot;let there be light&quot;, Chuck Norris said, &quot;say 'please'.&quot;",
+    "text": "Chuck Norris can write to an output stream.",
   },
 }
 `;

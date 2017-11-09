@@ -3,26 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "npm run clean && npm run lint && tsc && npm run copy:graphql",
     "start": "npm run clean && npm run copy:graphql && npm run lint -- --force && run-p copy:graphql:watch lint:watch build:watch",
+    "build": "npm run clean && npm run lint && tsc && npm run copy:graphql",
+    "build:watch": "node node_modules/tsc-watch --onSuccess \"node build/server.js\"",
     "test": "npm run test:all",
     "test:integration": "npm run validate:env && jest --config jest/integration.config.js",
     "test:unit": "npm run validate:env && jest --config jest/unit.config.js",
     "test:all": "npm run validate:env && jest",
-    "lint": "tslint -t stylish 'src/**/*.ts'",
-    "build:watch": "node node_modules/tsc-watch --onSuccess \"node build/server.js\"",
-    "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
-    "validate:env": "tsc env.ts --lib esnext --outDir ./build/ && node ./build/env.js",
+    "lint": "tslint -t stylish 'server/**/*.ts'",
+    "lint:watch": "chokidar \"server/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
+    "validate:env": "tsc server/env.ts --lib esnext --outDir ./build/ && node ./build/env.js",
     "clean": "rimraf build",
     "clean:graphql": "rimraf build/**/*.{gql,graphql,graphqls}",
-    "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build/src",
-    "copy:graphql:watch": "chokidar \"./src/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch server.ts\""
+    "copy:graphql": "cpx \"server/**/*.{gql,graphql,graphqls}\" build",
+    "copy:graphql:watch": "chokidar \"./server/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch server.ts\""
   },
   "engines": {
     "node": ">= 8.1.4"
   },
   "dependencies": {
-    "@types/zen-observable": "0.5.3",
     "apollo-server-koa": "1.2.0",
     "chalk": "2.3.0",
     "envalid": "4.1.1",
@@ -50,6 +49,7 @@
     "@types/nock": "8.2.1",
     "@types/request-promise": "4.1.39",
     "@types/winston": "2.3.7",
+    "@types/zen-observable": "0.5.3",
     "cash-touch": "0.2.0",
     "chokidar-cli": "1.2.0",
     "cpx": "1.5.0",
@@ -61,6 +61,7 @@
     "ts-jest": "21.2.1",
     "tsc-watch": "1.0.8",
     "tslint": "5.8.0",
+    "tslint-config-airbnb": "5.3.0",
     "typescript": "2.6.1"
   },
   "jest-junit": {
