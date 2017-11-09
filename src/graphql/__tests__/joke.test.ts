@@ -38,6 +38,19 @@ beforeAll(() => {
 });
 
 describe('query.joke', () => {
+  it('should return a result with errors if query is incorrect', async () => {
+    const query = `
+      query Q {
+        jokeByCategory {
+          nonExistentProperty
+        }
+      }
+    `;
+
+    const result = await graphql(schema, query, rootValue, context);
+    expect(result.errors).toBeDefined();
+  });
+
   it('should match default snapshot', async () => {
     const query = `
       query Q {
