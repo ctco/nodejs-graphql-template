@@ -2,6 +2,9 @@
   "files": [
     "server/server.ts"
   ],
+  "include": [
+    "**/__tests__/*.ts"
+  ],
   "compilerOptions": {
     "outDir": "./build",
     "target": "ES2017",
