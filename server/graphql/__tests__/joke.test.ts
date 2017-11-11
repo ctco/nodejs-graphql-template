@@ -17,7 +17,7 @@ beforeAll(() => {
       categories: [],
     },
   };
-  nock(process.env.JOKE_SERVICE_URI)
+  nock(process.env.JOKE_SERVICE_URI!)
     .get('/jokes/random')
     .reply(200, defaultResponse);
 
@@ -31,7 +31,7 @@ beforeAll(() => {
       ],
     },
   };
-  nock(process.env.JOKE_SERVICE_URI)
+  nock(process.env.JOKE_SERVICE_URI!)
     .get('/jokes/random')
     .query({ limitTo: '[nerdy]' })
     .reply(200, nerdyResponse);
