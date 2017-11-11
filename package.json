@@ -42,7 +42,7 @@
     "winston": "2.4.0"
   },
   "devDependencies": {
-    "@types/graphql": "0.11.5",
+    "@types/graphql": "0.11.6",
     "@types/jest": "21.1.5",
     "@types/koa": "2.0.40",
     "@types/koa-router": "7.0.24",
