@@ -1,4 +1,3 @@
-
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Build Status TravisCI](https://travis-ci.org/ctco-dev/nodejs-graphql-template.svg?branch=master)](https://travis-ci.org/ctco-dev/nodejs-graphql-template)
 [![Build Status AppVeyor](https://ci.appveyor.com/api/projects/status/wclytcth7faa5na5?svg=true)](https://ci.appveyor.com/project/trioletas/nodejs-graphql-template)
@@ -13,11 +12,11 @@ Node.js, Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Features
 
-- Docker :whale: configuration for production deployment, development and test
-- Configuration with `.env`
-  - CORS toggle
-  - GraphiQL toggle
-  - GraphQL Voyager toggle
+- Docker :whale: configuration for production deployment, development and testing
+- Configuration with `.env`, toggles:
+  - _CORS_
+  - _GraphiQL_
+  - _GraphQL Voyager_
   - Logging levels
 - Configurable logging 
   - powered by `winston`  
@@ -34,11 +33,11 @@ Node.js, Koa, GraphQL and TypeScript template project with batteries included.
 
 ## Required Software
 
-- node >= 8.1.4 & npm / yarn
+- `node` >= 8.1.4 & `npm` / `yarn`
 
 or
 
-- Docker >= 17.05
+- `Docker` >= 17.05
 
 ## Install
 
@@ -52,8 +51,7 @@ or
 - yarn: `$ yarn start`
 - Docker: `$ docker-compose up --build`
 
-If you encounter issues with `src` folder not properly mounting on windows virtual box, see [this](https://github.com/docker/compose/issues/2548#issuecomment-232922650) comment for remedy.
-
+Attention windows users: when `Docker for Windows` is not an option, install `yarn` and run `$ yarn && yarn docker-mount` beforehand.
 ## Test
 
 > single test run
@@ -105,12 +103,9 @@ In Docker:
   - [GitHub](https://github.com/koajs/koa)
 
 - GraphQL
-  - [Documentation](http://graphql.org/learn/)
-  - [GraphQL.js](http://graphql.org/graphql-js/)
   - [graphql-tools](https://github.com/apollographql/graphql-tools)
   - [apollo-server](https://github.com/apollographql/apollo-server)
-  - [GraphQL Voyager](https://apis.guru/graphql-voyager/)
-  - [ctco-dev/awesome-javascript materials](https://github.com/ctco-dev/awesome-javascript#graphql)
+  - [graphql-voyager](https://apis.guru/graphql-voyager/)
 
 - Jest
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)
