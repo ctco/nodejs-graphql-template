@@ -3652,9 +3652,9 @@ tslib@^1.0.0, tslib@^1.7.1:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.8.0.tgz#dc604ebad64bcbf696d613da6c954aa0e7ea1eb6"
 
-tslint-config-airbnb@5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/tslint-config-airbnb/-/tslint-config-airbnb-5.4.0.tgz#9b5a00ba64d4e8cd08fc984935ef3b37c773eba2"
+tslint-config-airbnb@5.4.2:
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/tslint-config-airbnb/-/tslint-config-airbnb-5.4.2.tgz#18eeff28f697b578731249d9a3ef8955b2f04f44"
   dependencies:
     tslint-consistent-codestyle "^1.10.0"
     tslint-eslint-rules "^4.1.1"
