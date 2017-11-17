@@ -61,7 +61,7 @@
     "ts-jest": "21.2.3",
     "tsc-watch": "1.0.8",
     "tslint": "5.8.0",
-    "tslint-config-airbnb": "5.3.1",
+    "tslint-config-airbnb": "5.4.0",
     "typescript": "2.6.1"
   },
   "jest-junit": {
