@@ -34,7 +34,8 @@ node_modules
 # IDEA/WebStorm
 .idea/
 *.iml
-# graphql extension for WebStorm
+
+# GraphQL extension for WebStorm
 graphql.config.json
 
 # testing
@@ -51,3 +52,6 @@ yarn-error.log*
 .DS_Store
 .env
 reports/
+
+# Visual Studio Code
+.vscode
