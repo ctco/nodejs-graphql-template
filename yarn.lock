@@ -2048,9 +2048,9 @@ jest-jasmine2@^21.2.1:
     jest-snapshot "^21.2.1"
     p-cancelable "^0.3.0"
 
-jest-junit@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-3.1.0.tgz#3bd0b7a8bfd5b91f86376d44ff0f4c7f136f4287"
+jest-junit@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-3.3.0.tgz#473b8c00d171a84a61ad6e456a29936ee0b64f40"
   dependencies:
     mkdirp "^0.5.1"
     strip-ansi "^4.0.0"
