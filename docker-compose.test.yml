@@ -8,5 +8,3 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - ./server:/opt/app/server
-    environment:
-      - NODE_ENV=development
