@@ -110,9 +110,20 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa@*", "@types/koa@2.0.40":
+"@types/koa@*":
   version "2.0.40"
   resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.0.40.tgz#d09f5c2e58b68932580b747f2ff763299ce9cc7f"
+  dependencies:
+    "@types/accepts" "*"
+    "@types/cookies" "*"
+    "@types/http-assert" "*"
+    "@types/keygrip" "*"
+    "@types/koa-compose" "*"
+    "@types/node" "*"
+
+"@types/koa@2.0.41":
+  version "2.0.41"
+  resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.0.41.tgz#76647382a042d334608816382b576f6915898a2d"
   dependencies:
     "@types/accepts" "*"
     "@types/cookies" "*"
