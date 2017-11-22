@@ -45,7 +45,7 @@
   "devDependencies": {
     "@types/graphql": "0.11.6",
     "@types/jest": "21.1.7",
-    "@types/koa": "2.0.40",
+    "@types/koa": "2.0.41",
     "@types/koa-router": "7.0.25",
     "@types/nock": "8.2.1",
     "@types/request-promise": "4.1.39",
