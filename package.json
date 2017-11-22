@@ -28,7 +28,7 @@
     "envalid": "4.1.1",
     "graphql": "0.11.7",
     "graphql-tools": "2.5.1",
-    "graphql-voyager": "1.0.0-rc.9",
+    "graphql-voyager": "1.0.0-rc.10",
     "koa": "2.4.1",
     "koa-bodyparser": "4.2.0",
     "koa-convert": "1.2.0",
