@@ -1100,9 +1100,9 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
-envalid@4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/envalid/-/envalid-4.1.1.tgz#12ebc4bafb6111512023aee7aebc3c7698d5bfe7"
+envalid@4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/envalid/-/envalid-4.1.2.tgz#dacaee06b058b967b1c2a6b6458c8615e6396ebe"
   dependencies:
     chalk "2.1.0"
     dotenv "4.0.0"
