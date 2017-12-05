@@ -61,7 +61,7 @@
     "npm-run-all": "4.1.2",
     "rimraf": "2.6.2",
     "ts-jest": "21.2.3",
-    "tsc-watch": "1.0.8",
+    "tsc-watch": "1.0.9",
     "tslint": "5.8.0",
     "tslint-config-airbnb": "5.4.2",
     "typescript": "2.6.2"
