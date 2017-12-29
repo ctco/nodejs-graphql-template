@@ -2,22 +2,28 @@
 
 exports[`query.joke should match default snapshot 1`] = `
 Object {
-  "jokeByCategory": Object {
-    "categories": Array [],
-    "id": "2000",
-    "text": "Chuck Norris can write to an output stream.",
+  "data": Object {
+    "jokeByCategory": Object {
+      "categories": Array [],
+      "id": "2000",
+      "text": "Chuck Norris can write to an output stream.",
+    },
   },
+  "errors": undefined,
 }
 `;
 
 exports[`query.joke should match nerdy snapshot 1`] = `
 Object {
-  "jokeByCategory": Object {
-    "categories": Array [
-      "NERDY",
-    ],
-    "id": "1000",
-    "text": "Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
+  "data": Object {
+    "jokeByCategory": Object {
+      "categories": Array [
+        "NERDY",
+      ],
+      "id": "1000",
+      "text": "Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
+    },
   },
+  "errors": undefined,
 }
 `;

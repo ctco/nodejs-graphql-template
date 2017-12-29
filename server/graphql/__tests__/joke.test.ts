@@ -50,9 +50,9 @@ describe('query.joke', () => {
     `;
 
     const result = await graphql(schema, query, rootValue, context);
-    const { data } = result;
+    const { data, errors } = result;
 
-    expect(data).toMatchSnapshot();
+    expect({ data, errors }).toMatchSnapshot();
   });
 
   it('should match nerdy snapshot', async () => {
@@ -67,9 +67,9 @@ describe('query.joke', () => {
     `;
 
     const result = await graphql(schema, query, rootValue, context);
-    const { data } = result;
+    const { data, errors } = result;
 
-    expect(data).toMatchSnapshot();
+    expect({ data, errors }).toMatchSnapshot();
   });
 });
 
