@@ -1,10 +1,10 @@
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Build Status TravisCI](https://travis-ci.org/ctco/nodejs-graphql-template.svg?branch=master)](https://travis-ci.org/ctco/nodejs-graphql-template)
-[![Build Status AppVeyor](https://ci.appveyor.com/api/projects/status/wclytcth7faa5na5?svg=true)](https://ci.appveyor.com/project/trioletas/nodejs-graphql-template)
+[![Build Status AppVeyor](https://ci.appveyor.com/api/projects/status/wclytcth7faa5na5?svg=true)](https://ci.appveyor.com/project/trioletas/koa-graphql-template)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ctco/nodejs-graphql-template.svg)](https://greenkeeper.io/)
 [![dependencies Status](https://david-dm.org/ctco/nodejs-graphql-template/master/status.svg)](https://david-dm.org/ctco/nodejs-graphql-template/master)
-[![devDependencies Status](https://david-dm.org/ctco/koa-graphql-template/master/dev-status.svg)](https://david-dm.org/ctco/nodejs-graphql-template/master#info=devDependencies)
+[![devDependencies Status](https://david-dm.org/ctco/nodejs-graphql-template/master/dev-status.svg)](https://david-dm.org/ctco/nodejs-graphql-template/master#info=devDependencies)
 
 
 # nodejs-graphql-template
