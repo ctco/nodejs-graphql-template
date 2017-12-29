@@ -21,6 +21,9 @@ const router = new Router();
 if (process.env.VOYAGER) {
   router.all(`/${voyagerPath}`, middleware({
     endpointUrl: `/${graphqlPath}`,
+    displayOptions: {
+      sortByAlphabet: true,
+    },
   }));
 }
 

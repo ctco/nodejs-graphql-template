@@ -1,6 +1,6 @@
 # Prepare
 
-FROM node:8.9.0-alpine AS base
+FROM node:8.9.3-alpine AS base
 
 RUN mkdir -p /opt/app
 
@@ -36,7 +36,6 @@ COPY --from=dependencies /opt/app/production_node_modules ./node_modules
 COPY --from=build /opt/app .
 
 ENV PORT 3001
-ENV HOST 0.0.0.0
 ENV NODE_ENV production
 
 HEALTHCHECK CMD curl -fs http://$HOST:$PORT/healthz || exit 1

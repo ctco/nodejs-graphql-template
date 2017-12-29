@@ -1,6 +1,6 @@
 # Prepare
 
-FROM node:8.9.0-alpine
+FROM node:8.9.3-alpine
 
 RUN mkdir -p /opt/app
 
