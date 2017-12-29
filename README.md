@@ -13,11 +13,12 @@ Node.js, Koa, GraphQL and TypeScript template project with batteries included.
 ## Features
 
 - Docker :whale: configuration for production deployment, development and testing
-- Configuration with `.env`, toggles:
-  - _CORS_
+- GraphQL tools:
   - _GraphiQL_
   - _GraphQL Voyager_
-  - Logging levels
+  - _GraphQL IDL_
+- CORS middleware
+- 12 Factor Configuration with `.env`
 - Configurable logging 
   - powered by `winston`  
 - Supercharged Development Mode
