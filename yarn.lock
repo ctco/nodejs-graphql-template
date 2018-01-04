@@ -112,7 +112,7 @@
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.11.7.tgz#da39a2f7c74e793e32e2bb7b3b68da1691532dd5"
 
-"@types/hapi@^16.1.11":
+"@types/hapi@16.1.11":
   version "16.1.11"
   resolved "https://registry.yarnpkg.com/@types/hapi/-/hapi-16.1.11.tgz#a9b8fe6eee2f8cefb94f4f447d3c23a2b2c308cf"
   dependencies:
@@ -128,9 +128,9 @@
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@types/http-assert/-/http-assert-1.2.2.tgz#17dfe5a82184a8898935d96fe2eaedd37d22d9a4"
 
-"@types/jest@22.0.0":
-  version "22.0.0"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.0.0.tgz#23009941178aad7979a9591e026f7a96054d7bc0"
+"@types/jest@22.0.1":
+  version "22.0.1"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.0.1.tgz#6370a6d60cce3845e4cd5d00bf65f654264685bc"
 
 "@types/joi@*":
   version "13.0.3"
@@ -323,7 +323,7 @@ apollo-cache-control@^0.0.x:
   dependencies:
     graphql-extensions "^0.0.x"
 
-apollo-link@^1.0.7:
+apollo-link@1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.0.7.tgz#42cd38a7378332fc3e41a214ff6a6e5e703a556f"
   dependencies:
