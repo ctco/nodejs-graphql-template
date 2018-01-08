@@ -176,9 +176,9 @@
   dependencies:
     "@types/mime-db" "*"
 
-"@types/nock@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@types/nock/-/nock-9.1.0.tgz#f2f0b1da56507cb469fa08225ee78f5453b910d6"
+"@types/nock@9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@types/nock/-/nock-9.1.1.tgz#0a1d5df5b9fe5b5ac90926156c58f1544ddd3cf5"
   dependencies:
     "@types/node" "*"
 
