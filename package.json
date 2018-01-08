@@ -59,7 +59,7 @@
     "docker-share": "0.0.4",
     "jest": "22.0.4",
     "jest-junit": "3.4.1",
-    "nock": "9.1.5",
+    "nock": "9.1.6",
     "npm-run-all": "4.1.2",
     "rimraf": "2.6.2",
     "ts-jest": "22.0.0",
