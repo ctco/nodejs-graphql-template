@@ -64,7 +64,7 @@
     "rimraf": "2.6.2",
     "ts-jest": "22.0.0",
     "tsc-watch": "1.0.13",
-    "tslint": "5.8.0",
+    "tslint": "5.9.0",
     "tslint-config-airbnb": "5.4.2",
     "typescript": "2.6.2"
   },
