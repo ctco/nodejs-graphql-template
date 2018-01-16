@@ -40,7 +40,7 @@
     "moment": "2.20.1",
     "request": "2.83.0",
     "request-promise": "4.2.2",
-    "source-map-support": "0.5.0",
+    "source-map-support": "0.5.1",
     "winston": "2.4.0"
   },
   "devDependencies": {
