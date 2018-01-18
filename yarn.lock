@@ -3826,9 +3826,9 @@ ts-jest@22.0.0:
     source-map-support "^0.5.0"
     yargs "^10.0.3"
 
-tsc-watch@1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.13.tgz#506d7a2007ef78d72d4ab6a0fa04d2a5828c11a3"
+tsc-watch@1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.14.tgz#c8fdb5b594495610801371ab1b2c681662118703"
   dependencies:
     chalk "^2.3.0"
     cross-spawn "^5.1.0"
