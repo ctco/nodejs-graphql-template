@@ -50,7 +50,7 @@
     "@types/koa": "2.0.43",
     "@types/koa-router": "7.0.27",
     "@types/nock": "9.1.1",
-    "@types/request-promise": "4.1.39",
+    "@types/request-promise": "4.1.40",
     "@types/winston": "2.3.7",
     "@types/zen-observable": "0.5.3",
     "cash-touch": "0.2.0",
