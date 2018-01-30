@@ -35,7 +35,7 @@
     "koa-convert": "1.2.0",
     "koa-cors": "0.0.16",
     "koa-heartbeat": "0.1.2",
-    "koa-router": "7.3.0",
+    "koa-router": "7.4.0",
     "lodash.merge": "4.6.0",
     "moment": "2.20.1",
     "request": "2.83.0",
