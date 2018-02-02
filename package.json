@@ -58,7 +58,7 @@
     "cpx": "1.5.0",
     "docker-share": "0.0.4",
     "jest": "22.0.4",
-    "jest-junit": "3.4.1",
+    "jest-junit": "3.5.0",
     "nock": "9.1.5",
     "npm-run-all": "4.1.2",
     "rimraf": "2.6.2",
