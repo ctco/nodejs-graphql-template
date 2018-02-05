@@ -47,7 +47,7 @@
     "@types/graphql": "0.11.7",
     "@types/hapi": "16.1.12",
     "@types/jest": "22.0.0",
-    "@types/koa": "2.0.43",
+    "@types/koa": "2.0.44",
     "@types/koa-router": "7.0.27",
     "@types/nock": "9.1.1",
     "@types/request-promise": "4.1.39",
