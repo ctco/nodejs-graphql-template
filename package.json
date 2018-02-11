@@ -30,7 +30,7 @@
     "graphql": "0.12.3",
     "graphql-tools": "2.16.0",
     "graphql-voyager": "1.0.0-rc.11",
-    "koa": "2.4.1",
+    "koa": "2.5.0",
     "koa-bodyparser": "4.2.0",
     "koa-convert": "1.2.0",
     "koa-cors": "0.0.16",
