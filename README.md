@@ -5,18 +5,18 @@
 [![dependencies Status](https://david-dm.org/ctco/nodejs-graphql-template/master/status.svg)](https://david-dm.org/ctco/nodejs-graphql-template/master)
 [![devDependencies Status](https://david-dm.org/ctco/nodejs-graphql-template/master/dev-status.svg)](https://david-dm.org/ctco/nodejs-graphql-template/master#info=devDependencies)
 
-
 # nodejs-graphql-template
 
-Node.js, Koa, GraphQL and TypeScript template project with batteries included.
+Node.js, Koa, GraphQL and TypeScript template project. 
+Batteries included :raised_hands:
 
 ## Features
 
 - Docker :whale: configuration for production deployment, development and testing
 - GraphQL tools:
+  - _GraphQL IDL_
   - _GraphiQL_
   - _GraphQL Voyager_
-  - _GraphQL IDL_
   - _GraphQL Playground_
 - [GraphQL Models and Connectors architecture](https://dev-blog.apollodata.com/how-to-build-graphql-servers-87587591ded5) implementation
 - CORS middleware
