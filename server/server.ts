@@ -4,7 +4,7 @@ import env from './env';
 process.env = env;
 import chalk from 'chalk';
 import app from './app';
-import { graphqlPath, voyagerPath } from './paths';
+import { graphiqlPath, voyagerPath } from './paths';
 
 const port = process.env.PORT || 3001;
 
@@ -13,7 +13,7 @@ app.listen(port, () => {
     if (process.env.GRAPHIQL) {
       console.log(`The GraphiQL App is running at:`);
       console.log();
-      console.log(`  ${chalk.cyan(`http://localhost:${port}/${graphqlPath}`)}`);
+      console.log(`  ${chalk.cyan(`http://localhost:${port}/${graphiqlPath}`)}`);
     } else {
       console.log(`The Koa App is running at:`);
       console.log();
