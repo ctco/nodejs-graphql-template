@@ -41,10 +41,12 @@ describe('query.joke', () => {
   it('should match default snapshot', async () => {
     const query = `
       query Q {
-        jokeByCategory {
-          id
-          text
-          categories
+        jokes {
+          byCategory {
+            id
+            text
+            categories
+          }
         }
       }
     `;
@@ -58,10 +60,12 @@ describe('query.joke', () => {
   it('should match nerdy snapshot', async () => {
     const query = `
       query Q {
-        jokeByCategory(category: NERDY) {
-          id
-          text
-          categories
+        jokes {
+          byCategory(category: NERDY) {
+            id
+            text
+            categories
+          }
         }
       }
     `;

@@ -1,9 +1,12 @@
-import { getJoke } from '../../services/joke';
+import { byCategory } from '../models/jokes';
 import { Joke, JokeCategory } from '../types/jokes';
 
 const resolvers = {
   Query: {
-    jokeByCategory: (_, { category }: JokeCategory): Promise<Joke> => getJoke(category),
+    jokes: () => ({}),
+  },
+  Jokes: {
+    byCategory: (_, { category }: JokeCategory): Promise<Joke> => byCategory(category),
   },
 };
 

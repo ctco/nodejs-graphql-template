@@ -3,10 +3,12 @@
 exports[`query.joke should match default snapshot 1`] = `
 Object {
   "data": Object {
-    "jokeByCategory": Object {
-      "categories": Array [],
-      "id": "2000",
-      "text": "Chuck Norris can write to an output stream.",
+    "jokes": Object {
+      "byCategory": Object {
+        "categories": Array [],
+        "id": "2000",
+        "text": "Chuck Norris can write to an output stream.",
+      },
     },
   },
   "errors": undefined,
@@ -16,12 +18,14 @@ Object {
 exports[`query.joke should match nerdy snapshot 1`] = `
 Object {
   "data": Object {
-    "jokeByCategory": Object {
-      "categories": Array [
-        "NERDY",
-      ],
-      "id": "1000",
-      "text": "Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
+    "jokes": Object {
+      "byCategory": Object {
+        "categories": Array [
+          "NERDY",
+        ],
+        "id": "1000",
+        "text": "Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
+      },
     },
   },
   "errors": undefined,

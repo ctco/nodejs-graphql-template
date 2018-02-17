@@ -17,8 +17,10 @@ Node.js, Koa, GraphQL and TypeScript template project with batteries included.
   - _GraphiQL_
   - _GraphQL Voyager_
   - _GraphQL IDL_
+  - _GraphQL Playground_
+- [GraphQL Models and Connectors architecture](https://dev-blog.apollodata.com/how-to-build-graphql-servers-87587591ded5) implementation
 - CORS middleware
-- 12 Factor Configuration with `.env`
+- [12 Factor Configuration](https://12factor.net/config) with `.env`
 - Configurable logging 
   - powered by `winston`  
 - Supercharged Development Mode
@@ -106,7 +108,8 @@ In Docker:
 - GraphQL
   - [graphql-tools](https://github.com/apollographql/graphql-tools)
   - [apollo-server](https://github.com/apollographql/apollo-server)
-  - [graphql-voyager](https://apis.guru/graphql-voyager/)
+  - [graphql-voyager](https://apis.guru/graphql-voyager)
+  - [graphql-playground](https://github.com/graphcool/graphql-playground)
 
 - Jest
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)

@@ -16,7 +16,7 @@
     "clean": "rimraf build",
     "clean:graphql": "rimraf build/**/*.{gql,graphql,graphqls}",
     "copy:graphql": "cpx \"server/**/*.{gql,graphql,graphqls}\" build",
-    "copy:graphql:watch": "chokidar \"./server/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch server.ts\"",
+    "copy:graphql:watch": "chokidar \"./server/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch server/server.ts\"",
     "docker-mount": "docker-share mount -t"
   },
   "engines": {
