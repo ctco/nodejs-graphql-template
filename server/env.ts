@@ -6,7 +6,9 @@ const env = envalid.cleanEnv(process.env, {
   JOKE_SERVICE_URI: url({ default: 'https://api.icndb.com' }),
   GRAPHIQL: bool({ default: true }),
   VOYAGER: bool({ default: true }),
+  PLAYGROUND: bool({ default: true }),
   CORS: bool({ devDefault: true, default: false }),
+  GRAPHQL_TRACING: bool({ default: true }),
   NODE_ENV: str({ devDefault: 'development' }),
   LOG_LEVEL: str({ default: 'info' }),
 });
