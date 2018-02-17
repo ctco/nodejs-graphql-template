@@ -1,14 +1,14 @@
-import * as request from 'request-promise';
+import requestPromise from 'request-promise';
 import logger from '../logger';
 import { Joke, JokeCategoryValues } from '../graphql/types/jokes';
 
 const getJoke = async (category: JokeCategoryValues): Promise<Joke> => {
-  const uri =  `${process.env.JOKE_SERVICE_URI}/jokes/random${category ? `?limitTo=[${category.toLowerCase()}]` 
+  const uri =  `${process.env.JOKE_SERVICE_URI}/jokes/random${category ? `?limitTo=[${category.toLowerCase()}]`
                                                                        : ''}`;
 
   logger.verbose(`Calling Joke service`, { uri });
 
-  const payload = await request(
+  const payload = await requestPromise(
     {
       uri,
       json: true,

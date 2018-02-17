@@ -1,6 +1,6 @@
 import { graphql } from 'graphql';
 import schema from '../schema';
-import * as nock from 'nock';
+import nock from 'nock';
 
 const rootValue = {};
 const context = {};

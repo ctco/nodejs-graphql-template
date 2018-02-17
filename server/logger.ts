@@ -1,5 +1,5 @@
-import * as winston from 'winston';
-import * as moment from 'moment';
+import winston from 'winston';
+import moment from 'moment';
 
 const logger = new (winston.Logger)({
   transports: [
