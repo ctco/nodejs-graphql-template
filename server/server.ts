@@ -1,7 +1,7 @@
 import 'source-map-support/register';
 import env from './env';
-
 process.env = env;
+
 import chalk from 'chalk';
 import app from './app';
 import { graphiqlPath, voyagerPath, playgroundPath } from './paths';

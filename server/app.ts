@@ -23,15 +23,7 @@ if (process.env.CORS) {
 
 const router = new koaRouter();
 
-if (process.env.VOYAGER) {
-  router.all(`/${voyagerPath}`, koaMiddleware({
-    endpointUrl: `/${graphqlPath}`,
-    displayOptions: {
-      sortByAlphabet: true,
-    },
-  }));
-}
-
+// GraphQL
 const graphqlMiddleware = graphqlKoa({
   schema,
   tracing: Boolean(process.env.GRAPHQL_TRACING),
@@ -45,10 +37,22 @@ const graphqlMiddleware = graphqlKoa({
 router.post(`/${graphqlPath}*`, koaBodyparser(), graphqlMiddleware);
 router.get(`/${graphqlPath}*`, graphqlMiddleware);
 
+// GraphQL Voyager
+if (process.env.VOYAGER) {
+  router.all(`/${voyagerPath}`, koaMiddleware({
+    endpointUrl: `/${graphqlPath}`,
+    displayOptions: {
+      sortByAlphabet: true,
+    },
+  }));
+}
+
+// GraphiQL
 if (process.env.GRAPHIQL) {
   router.get(`/${graphiqlPath}`, graphiqlKoa({ endpointURL: `/${graphqlPath}` }));
 }
 
+// GraphQL Playground
 if (process.env.PLAYGROUND) {
   router.all(
     `/${playgroundPath}`,
@@ -58,7 +62,9 @@ if (process.env.PLAYGROUND) {
   );
 }
 
+// Koa Heartbeat
 app.use(koaHeartbeat({ path: '/healthz', body: 'up!' }));
+
 app.use(router.routes());
 app.use(router.allowedMethods());
 
