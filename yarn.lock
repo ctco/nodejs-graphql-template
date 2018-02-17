@@ -1619,9 +1619,9 @@ graphql-tools@2.21.0:
     iterall "^1.1.3"
     uuid "^3.1.0"
 
-graphql-voyager@1.0.0-rc.14:
-  version "1.0.0-rc.14"
-  resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.0.0-rc.14.tgz#57242b9586653b28b2600f0d6e6f5c4c1da68983"
+graphql-voyager@1.0.0-rc.11:
+  version "1.0.0-rc.11"
+  resolved "https://registry.yarnpkg.com/graphql-voyager/-/graphql-voyager-1.0.0-rc.11.tgz#5cc348e507062d4ef8540cead25dc2cec04ef933"
   dependencies:
     "@f/animate" "^1.0.1"
     classnames "^2.2.5"
