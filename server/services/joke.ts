@@ -1,21 +1,13 @@
-import requestPromise from 'request-promise';
+import { createClient } from 'flashheart';
 import logger from '../logger';
 import { Joke, JokeCategoryValues } from '../graphql/types/jokes';
 
+const http = createClient({ logger });
+
 const getJoke = async (category: JokeCategoryValues): Promise<Joke> => {
-  const uri =  `${process.env.JOKE_SERVICE_URI}/jokes/random${category ? `?limitTo=[${category.toLowerCase()}]`
-                                                                       : ''}`;
+  const uri = `${process.env.JOKE_SERVICE_URI}/jokes/random${category ? `?limitTo=[${category.toLowerCase()}]` : ''}`;
 
-  logger.verbose(`Calling Joke service`, { uri });
-
-  const payload = await requestPromise(
-    {
-      uri,
-      json: true,
-    },
-  );
-
-  logger.debug(`Joke service payload`, { uri, payload });
+  const payload = await http.getAsync(uri);
 
   return {
     ...payload.value,

@@ -6,9 +6,13 @@ import koaRouter from 'koa-router';
 import koaBodyparser from 'koa-bodyparser';
 import { graphqlKoa, graphiqlKoa } from 'apollo-server-koa';
 import koaMiddleware from 'graphql-voyager/middleware/koa';
+import { promisifyAll } from 'bluebird';
+import { Client }  from 'flashheart';
 import { graphqlPath, graphiqlPath, voyagerPath } from './paths';
 import schema from './graphql/schema';
 import logger from './logger';
+
+promisifyAll(Client.prototype);
 
 const app = new koa();
 
