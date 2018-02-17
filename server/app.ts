@@ -17,11 +17,12 @@ promisifyAll(Client.prototype);
 
 const app = new koa();
 
+const router = new koaRouter();
+
+// CORS?
 if (process.env.CORS) {
   app.use(koaConvert(koaCors()));
 }
-
-const router = new koaRouter();
 
 // GraphQL
 const graphqlMiddleware = graphqlKoa({
@@ -37,7 +38,7 @@ const graphqlMiddleware = graphqlKoa({
 router.post(`/${graphqlPath}*`, koaBodyparser(), graphqlMiddleware);
 router.get(`/${graphqlPath}*`, graphqlMiddleware);
 
-// GraphQL Voyager
+// GraphQL Voyager?
 if (process.env.VOYAGER) {
   router.all(`/${voyagerPath}`, koaMiddleware({
     endpointUrl: `/${graphqlPath}`,
@@ -47,12 +48,12 @@ if (process.env.VOYAGER) {
   }));
 }
 
-// GraphiQL
+// GraphiQL?
 if (process.env.GRAPHIQL) {
   router.get(`/${graphiqlPath}`, graphiqlKoa({ endpointURL: `/${graphqlPath}` }));
 }
 
-// GraphQL Playground
+// GraphQL Playground?
 if (process.env.PLAYGROUND) {
   router.all(
     `/${playgroundPath}`,

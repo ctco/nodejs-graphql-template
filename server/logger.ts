@@ -10,8 +10,9 @@ const logger = new (winston.Logger)({
         options.level.toUpperCase() + ' ' +
         (options.message ? options.message : '') +
         (
-          options.meta && Object.keys(options.meta).length ? '\n\t' + JSON.stringify(options.meta)
-                                                           : ''
+          options.meta && Object.keys(options.meta).length
+            ? '\n\t' + JSON.stringify(options.meta)
+            : ''
         ),
     }),
   ],

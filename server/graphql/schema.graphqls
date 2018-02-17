@@ -6,7 +6,7 @@ type Query {
 
 # _Jokes_ definition
 type Jokes {
-    # Get _Jokes_ by _Category_
+    # Get _Joke_ by _JokeCategoryEnum_
     byCategory(category: JokeCategoryEnum): Joke
 }
 
@@ -17,7 +17,7 @@ type Joke {
   categories: [JokeCategoryEnum]
 }
 
-# Available Joke's categories
+# Available _Joke_ categories
 enum JokeCategoryEnum {
   NERDY
   EXPLICIT
