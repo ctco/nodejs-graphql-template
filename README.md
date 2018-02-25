@@ -15,6 +15,7 @@ Batteries included :raised_hands:
 - Docker :whale: configuration for production deployment, development and testing
 - GraphQL tools:
   - _GraphQL IDL_
+  - _Apollo Tracing_
   - _GraphiQL_
   - _GraphQL Voyager_
   - _GraphQL Playground_
@@ -104,6 +105,7 @@ In Docker:
 
 - GraphQL
   - [graphql-tools](https://github.com/apollographql/graphql-tools)
+  - [graphql-tracing](https://github.com/apollographql/apollo-tracing)
   - [apollo-server](https://github.com/apollographql/apollo-server)
   - [graphql-voyager](https://apis.guru/graphql-voyager)
   - [graphql-playground](https://github.com/graphcool/graphql-playground)
