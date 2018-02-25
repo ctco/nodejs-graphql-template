@@ -10,3 +10,5 @@ services:
       - ./server:/opt/app/server
     ports:
       - 3001:3001
+    environment:
+      - SHELL=/bin/sh  

@@ -1,6 +1,6 @@
 # Prepare
 
-FROM node:8.9.3-alpine
+FROM node:8.9.4-alpine
 
 RUN mkdir -p /opt/app
 
@@ -16,5 +16,7 @@ RUN yarn
 # Run
 
 COPY . /opt/app
+
+ENV NODE_ENV development
 
 ENTRYPOINT ["yarn"]

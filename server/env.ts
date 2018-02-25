@@ -9,7 +9,6 @@ const env = envalid.cleanEnv(process.env, {
   PLAYGROUND: bool({ default: true }),
   CORS: bool({ devDefault: true, default: false }),
   GRAPHQL_TRACING: bool({ default: true }),
-  NODE_ENV: str({ devDefault: 'development' }),
   LOG_LEVEL: str({ default: 'info' }),
 });
 

@@ -76,4 +76,3 @@ describe('query.joke', () => {
     expect({ data, errors }).toMatchSnapshot();
   });
 });
-

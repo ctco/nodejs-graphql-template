@@ -19,5 +19,4 @@ module.exports = Object.assign(
     "testEnvironment": "node",
   },
   process.env.CI ? require('./ci.partial.config.js') : {}
-)
-;
+);

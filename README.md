@@ -63,19 +63,16 @@ Attention windows users: when `Docker for Windows` is not an option, install `ya
 
 - npm: `$ npm run test:unit`
 - yarn: `$ yarn test:unit`
-- Docker: `$ docker-compose -f docker-compose.test.yml run sut test:unit`
 
 ### Run integration tests
 
 - npm: `$ npm run test:integration`
 - yarn: `$ yarn test:integration`
-- Docker: `$ docker-compose -f docker-compose.test.yml run sut test:integration`
 
 ### Run all tests
 
 - npm: `$ npm test`
 - yarn: `$ yarn test`
-- Docker: `$ docker-compose -f docker-compose.test.yml run sut`
 
 ### Generate coverage reports
 
