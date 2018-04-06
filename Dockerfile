@@ -1,44 +1,47 @@
 # Prepare
-
-FROM node:8.9.4-alpine AS base
-
-RUN mkdir -p /opt/app
+FROM node:8.11.0-alpine AS base
 
 WORKDIR /opt/app
 
 # Install
-
 FROM base AS dependencies
 
-COPY package.json .
-COPY yarn.lock .
+COPY package.json yarn.lock ./
 
 RUN yarn --production --ignore-scripts --prefer-offline
 RUN cp -R node_modules production_node_modules
+
 RUN yarn
 
 # Build
-
 FROM base AS build
 
-COPY --from=dependencies /opt/app/node_modules  /opt/node_modules
-ENV PATH /opt/node_modules/.bin:$PATH
+COPY --from=dependencies /opt/app/node_modules ./node_modules
 
-COPY . /opt/app
+ENV CI true
+COPY tsconfig.json tslint.json ./
+
+COPY src ./src
+
+COPY package.json .
 
 RUN yarn build
 
-# Run
+# Test
+COPY jest.config.js .
+COPY jest ./jest
 
+RUN yarn test
+
+# Run
 FROM base AS run
 
 COPY --from=dependencies /opt/app/production_node_modules ./node_modules
-COPY --from=build /opt/app .
+COPY --from=dependencies /opt/app/package.json .
+COPY --from=build /opt/app/build ./build
 
 ENV PORT 3001
 ENV NODE_ENV production
-
-HEALTHCHECK CMD curl -fs http://$HOST:$PORT/healthz || exit 1
 
 EXPOSE $PORT
 

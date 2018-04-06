@@ -10,13 +10,13 @@
     "test:integration": "npm run validate:env && jest --config jest/integration.config.js",
     "test:unit": "npm run validate:env && jest --config jest/unit.config.js",
     "test:all": "npm run validate:env && jest",
-    "lint": "tslint -t stylish 'server/**/*.ts'",
-    "lint:watch": "chokidar \"server/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
-    "validate:env": "tsc server/env.ts --lib esnext --esModuleInterop --outDir ./build/ && node ./build/env.js",
+    "lint": "tslint -t stylish 'src/**/*.ts'",
+    "lint:watch": "chokidar \"src/**/*.ts\" -c \"tslint -t stylish --force '{path}'\"",
+    "validate:env": "tsc src/env.ts --lib esnext --esModuleInterop --outDir ./build/ && node ./build/env.js",
     "clean": "rimraf build",
     "clean:graphql": "rimraf build/**/*.{gql,graphql,graphqls}",
-    "copy:graphql": "cpx \"server/**/*.{gql,graphql,graphqls}\" build",
-    "copy:graphql:watch": "chokidar \"./server/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch server/server.ts\"",
+    "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build",
+    "copy:graphql:watch": "chokidar \"./src/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch src/server.ts\"",
     "docker-mount": "docker-share mount -t"
   },
   "engines": {

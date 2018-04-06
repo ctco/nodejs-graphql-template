@@ -9,15 +9,18 @@ import koaMiddleware from 'graphql-voyager/middleware/koa';
 const koaPlayground = require('graphql-playground-middleware-koa').default;
 import { promisifyAll } from 'bluebird';
 import { Client } from 'flashheart';
-import { graphqlPath, graphiqlPath, voyagerPath, playgroundPath } from './paths';
 import schema from './graphql/schema';
 import logger from './logger';
+import { entryPoint } from './entrypoint';
 
 promisifyAll(Client.prototype);
 
 const app = new koa();
 
 const router = new koaRouter();
+
+// Entry Point
+router.get('/', entryPoint);
 
 // CORS?
 if (process.env.CORS) {
@@ -35,13 +38,13 @@ const graphqlMiddleware = graphqlKoa({
   },
 });
 
-router.post(`/${graphqlPath}*`, koaBodyparser(), graphqlMiddleware);
-router.get(`/${graphqlPath}*`, graphqlMiddleware);
+router.post(`/${process.env.GRAPHQL_ENDPOINT}*`, koaBodyparser(), graphqlMiddleware);
+router.get(`/${process.env.GRAPHQL_ENDPOINT}*`, graphqlMiddleware);
 
 // GraphQL Voyager?
 if (process.env.VOYAGER) {
-  router.all(`/${voyagerPath}`, koaMiddleware({
-    endpointUrl: `/${graphqlPath}`,
+  router.all(`/${process.env.VOYAGER_ENDPOINT}`, koaMiddleware({
+    endpointUrl: `/${process.env.GRAPHQL_ENDPOINT}`,
     displayOptions: {
       sortByAlphabet: true,
     },
@@ -50,21 +53,21 @@ if (process.env.VOYAGER) {
 
 // GraphiQL?
 if (process.env.GRAPHIQL) {
-  router.get(`/${graphiqlPath}`, graphiqlKoa({ endpointURL: `/${graphqlPath}` }));
+  router.get(`/${process.env.GRAPHIQL_ENDPOINT}`, graphiqlKoa({ endpointURL: `/${process.env.GRAPHQL_ENDPOINT}` }));
 }
 
 // GraphQL Playground?
 if (process.env.PLAYGROUND) {
   router.all(
-    `/${playgroundPath}`,
+    `/${process.env.PLAYGROUND_ENDPOINT}`,
     koaPlayground({
-      endpoint: `/${graphqlPath}`,
+      endpoint: `/${process.env.GRAPHQL_ENDPOINT}`,
     }),
   );
 }
 
 // Koa Heartbeat
-app.use(koaHeartbeat({ path: '/healthz', body: 'up!' }));
+app.use(koaHeartbeat({ path: `/${process.env.LIVENESS_ENDPOINT}`, body: 'ok' }));
 
 app.use(router.routes());
 app.use(router.allowedMethods());

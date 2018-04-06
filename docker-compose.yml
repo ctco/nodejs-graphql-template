@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     volumes:
-      - ./server:/opt/app/server
+      - ./src:/opt/app/src
     ports:
       - 3001:3001
     environment:
-      - SHELL=/bin/sh  
+      - SHELL=/bin/sh

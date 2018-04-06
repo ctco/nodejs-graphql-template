@@ -1,6 +1,6 @@
 {
   "files": [
-    "server/server.ts"
+    "src/server.ts"
   ],
   "include": [
     "**/__tests__/*.ts"

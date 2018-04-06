@@ -1,15 +1,12 @@
 # Prepare
 
-FROM node:8.9.4-alpine
-
-RUN mkdir -p /opt/app
+FROM node:8.11.0-alpine
 
 WORKDIR /opt/app
 
 # Install
 
-COPY package.json .
-COPY yarn.lock .
+COPY package.json yarn.lock ./
 
 RUN yarn
 
