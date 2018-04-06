@@ -1,7 +1,7 @@
 import * as jokes from '../../connectors/joke';
-import { Joke, JokeCategoryValues } from '../../graphql/types/jokes';
+import { JokeCategoryEnum, Joke } from '../types';
 
-const byCategory = async (category: JokeCategoryValues): Promise<Joke> => {
+const byCategory = async (category: JokeCategoryEnum): Promise<Joke> => {
   const randomJokeResponse = await jokes.getRandomJokeByCategory(category);
   return {
     ...randomJokeResponse,

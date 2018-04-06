@@ -17,7 +17,8 @@
     "clean:graphql": "rimraf build/**/*.{gql,graphql,graphqls}",
     "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build",
     "copy:graphql:watch": "chokidar \"./src/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch src/server.ts\"",
-    "docker-mount": "docker-share mount -t"
+    "docker-mount": "docker-share mount -t",
+    "g2t": "graphql-to-typescript src/graphql/*.graphqls src/graphql/types/index.ts "
   },
   "engines": {
     "node": ">= 8.1.4"
@@ -54,6 +55,7 @@
     "chokidar-cli": "1.2.0",
     "cpx": "1.5.0",
     "docker-share": "0.0.4",
+    "graphql-to-typescript": "0.1.2",
     "jest": "22.3.0",
     "jest-junit": "3.6.0",
     "nock": "9.1.6",

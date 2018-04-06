@@ -1,10 +1,10 @@
 import { createClient } from 'flashheart';
 import logger from '../logger';
-import { Joke, JokeCategoryValues } from '../graphql/types/jokes';
+import { JokeCategoryEnum } from '../graphql/types';
 
 const http = createClient({ logger });
 
-const getRandomJokeByCategory = async (category: JokeCategoryValues): Promise<any> => {
+const getRandomJokeByCategory = async (category: JokeCategoryEnum): Promise<any> => {
   const uri = `${process.env.JOKE_SERVICE_URL}/jokes/random${category ? `?limitTo=[${category.toLowerCase()}]` : ''}`;
 
   const { value } = await http.getAsync(uri);

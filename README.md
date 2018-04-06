@@ -22,8 +22,8 @@ Batteries included :raised_hands:
 - [GraphQL Models and Connectors architecture](https://dev-blog.apollodata.com/how-to-build-graphql-servers-87587591ded5) implementation
 - CORS middleware
 - [12 Factor Configuration](https://12factor.net/config) with `.env`
-- Configurable logging 
-  - powered by `winston`  
+- Configurable logging
+  - powered by `winston`
 - Supercharged Development Mode
   - Incremental TypeScript builds
   - Automatic server restart on changes
@@ -56,6 +56,11 @@ or
 - Docker: `$ docker-compose up --build`
 
 Attention windows users: when `Docker for Windows` is not an option, install `yarn` and run `$ yarn && yarn docker-mount` beforehand.
+## Regenerate GraphQL schema TypeScript types
+
+- npm: `$ npm run g2t`
+- yarn: `$ yarn g2t`
+
 ## Test
 
 > single test run
@@ -109,12 +114,13 @@ In Docker:
   - [apollo-server](https://github.com/apollographql/apollo-server)
   - [graphql-voyager](https://apis.guru/graphql-voyager)
   - [graphql-playground](https://github.com/graphcool/graphql-playground)
+  - [graphql-to-typescript](https://github.com/3VLINC/graphql-to-typescript)
 
 - Jest
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)
 
 - winston
   - [GitHub](https://github.com/winstonjs/winston)
-  
+
 - Docker
   - [Home Page](https://www.docker.com)

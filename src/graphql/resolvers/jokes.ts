@@ -1,12 +1,12 @@
 import { byCategory } from '../models/jokes';
-import { Joke, JokeCategory } from '../types/jokes';
+import { ByCategoryJokesArgs, Joke } from '../types';
 
 const resolvers = {
   Query: {
     jokes: () => ({}),
   },
   Jokes: {
-    byCategory: (_, { category }: JokeCategory): Promise<Joke> => byCategory(category),
+    byCategory: (_, { category }: ByCategoryJokesArgs): Promise<Joke> => byCategory(category!),
   },
 };
 
