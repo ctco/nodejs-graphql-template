@@ -38,13 +38,15 @@ const graphqlMiddleware = graphqlKoa({
   },
 });
 
-router.post(`/${process.env.GRAPHQL_ENDPOINT}*`, koaBodyparser(), graphqlMiddleware);
-router.get(`/${process.env.GRAPHQL_ENDPOINT}*`, graphqlMiddleware);
+router.post(`/${process.env.GRAPHQL_PATH}*`, koaBodyparser(), graphqlMiddleware);
+router.get(`/${process.env.GRAPHQL_PATH}*`, graphqlMiddleware);
+
+const GRAPHQL_ENDPOINT = `${process.env.SELF_URL}/${process.env.GRAPHQL_PATH}`;
 
 // GraphQL Voyager?
 if (process.env.VOYAGER) {
-  router.all(`/${process.env.VOYAGER_ENDPOINT}`, koaMiddleware({
-    endpointUrl: `/${process.env.GRAPHQL_ENDPOINT}`,
+  router.all(`/${process.env.VOYAGER_PATH}`, koaMiddleware({
+    endpointUrl: GRAPHQL_ENDPOINT,
     displayOptions: {
       sortByAlphabet: true,
     },
@@ -53,21 +55,22 @@ if (process.env.VOYAGER) {
 
 // GraphiQL?
 if (process.env.GRAPHIQL) {
-  router.get(`/${process.env.GRAPHIQL_ENDPOINT}`, graphiqlKoa({ endpointURL: `/${process.env.GRAPHQL_ENDPOINT}` }));
+  router.get(
+    `/${process.env.GRAPHIQL_PATH}`,
+    graphiqlKoa({ endpointURL: GRAPHQL_ENDPOINT }),
+  );
 }
 
 // GraphQL Playground?
 if (process.env.PLAYGROUND) {
   router.all(
-    `/${process.env.PLAYGROUND_ENDPOINT}`,
-    koaPlayground({
-      endpoint: `/${process.env.GRAPHQL_ENDPOINT}`,
-    }),
+    `/${process.env.PLAYGROUND_PATH}`,
+    koaPlayground({ endpoint: GRAPHQL_ENDPOINT }),
   );
 }
 
 // Koa Heartbeat
-app.use(koaHeartbeat({ path: `/${process.env.LIVENESS_ENDPOINT}`, body: 'ok' }));
+app.use(koaHeartbeat({ path: `/${process.env.LIVENESS_PATH}`, body: 'ok' }));
 
 app.use(router.routes());
 app.use(router.allowedMethods());

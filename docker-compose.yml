@@ -12,4 +12,4 @@ services:
       - 3001:3001
     environment:
       - SHELL=/bin/sh
-      - SELF_URL=http://localhost:3001
+      
