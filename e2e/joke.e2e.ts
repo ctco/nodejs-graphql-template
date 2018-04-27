@@ -3,7 +3,7 @@ import client, { gql } from './client';
 test('jokes.byCategory should return a random joke', async () => {
   const response = await client().query({
     query: gql`
-      query Query {
+      query RandomJokeByCategory {
         jokes {
           byCategory {
             id

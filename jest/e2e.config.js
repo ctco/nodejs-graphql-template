@@ -2,9 +2,9 @@ module.exports = Object.assign(
   {},
   require('./default.config.js'),
   {
-    "testRegex": ".*\\.test\\.(ts)$",
+    "testRegex": ".*\\.e2e\\.(ts)$",
     "roots": [
-      "tests"
+      "e2e"
     ]
   }
 );
