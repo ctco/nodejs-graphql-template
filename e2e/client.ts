@@ -6,7 +6,7 @@ import gql from 'graphql-tag';
 import 'isomorphic-fetch';
 
 const httpLink = new HttpLink({
-  uri: `${process.env.E2E_TEST_URI}/${process.env.GRAPHQL_PATH}`,
+  uri: `${process.env.E2E_TEST_URL}/${process.env.GRAPHQL_PATH}`,
 });
 
 const client = () => new ApolloClient({
