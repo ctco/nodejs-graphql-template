@@ -1,7 +1,7 @@
 import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
-import gql from 'graphql-tag';
+export { default as gql } from 'graphql-tag';
 
 import 'isomorphic-fetch';
 
@@ -15,6 +15,3 @@ const client = () => new ApolloClient({
 });
 
 export default client;
-export {
-  gql,
-};
