@@ -2,9 +2,8 @@ import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import gql from 'graphql-tag';
-import fetch from 'node-fetch';
 
-global['fetch'] = fetch;
+import 'isomorphic-fetch';
 
 const httpLink = new HttpLink({
   uri: `${process.env.E2E_TEST_URI}/${process.env.GRAPHQL_PATH}`,
