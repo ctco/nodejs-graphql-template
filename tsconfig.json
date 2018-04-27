@@ -3,7 +3,8 @@
     "src/server.ts"
   ],
   "include": [
-    "**/__tests__/*.ts"
+    "**/__tests__/*.ts",
+    "./e2e"
   ],
   "compilerOptions": {
     "outDir": "./build",
