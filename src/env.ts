@@ -18,7 +18,6 @@ const env = envalid.cleanEnv(process.env, {
   CORS: bool({ devDefault: true, default: false }),
   LOG_LEVEL: str({ default: 'info' }),
   LIVENESS_PATH: str({ default: 'healthz' }),
-  E2E_TEST_URL: str({ default: 'http://localhost:3001' }),
 });
 
 export default env;
