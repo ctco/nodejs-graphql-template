@@ -7,19 +7,21 @@
 
 # nodejs-graphql-template
 
-Node.js, Koa, GraphQL and TypeScript template project. 
-Batteries included :raised_hands:
+Node.js, Koa, GraphQL and TypeScript template project.
+Batteries and opinions included :raised_hands:
 
 ## Features
 
 - Docker :whale: configuration for production deployment, development and testing
 - GraphQL tools:
-  - _GraphQL IDL_
-  - _Apollo Tracing_
+
   - _GraphiQL_
   - _GraphQL Voyager_
   - _GraphQL Playground_
-- [GraphQL Models and Connectors architecture](https://dev-blog.apollodata.com/how-to-build-graphql-servers-87587591ded5) implementation
+  - _GraphQL IDL_
+  - _Apollo Tracing_
+
+- Reference [GraphQL Models and Connectors architecture](https://dev-blog.apollodata.com/how-to-build-graphql-servers-87587591ded5) implementation
 - CORS middleware
 - [12 Factor Configuration](https://12factor.net/config) with `.env`
 - Configurable logging
@@ -55,7 +57,7 @@ or
 - yarn: `$ yarn start`
 - Docker: `$ docker-compose up --build`
 
-Attention windows users: when `Docker for Windows` is not an option, install `yarn` and run `$ yarn && yarn docker-mount` beforehand.
+Attention Windows users: when `Docker for Windows` is not an option, install `yarn` and run `$ yarn && yarn docker-mount` beforehand.
 ## Generate TypeScript types for GraphQL schema 
 
 - npm: `$ npm run gql-2-ts`
@@ -87,14 +89,14 @@ Set environment variable `CI` to true to generate coverage reports.
 In *nix:
 
 `CI=true npm test`
+or
+`CI=true yarn test`
 
 In Windows:
 
 `set CI=true&&npm test`
-
-In Docker:
-
-`docker-compose -f docker-compose.test.yml run -e CI=true sut`
+or
+`set CI=true&&yarn test`
 
 ## Build
 
