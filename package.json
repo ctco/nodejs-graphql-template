@@ -18,7 +18,7 @@
     "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build",
     "copy:graphql:watch": "chokidar \"./src/**/*.{gql,graphql,graphqls}\" -c \"npm run clean:graphql && npm run copy:graphql && touch src/server.ts\"",
     "docker-mount": "docker-share mount -t",
-    "g2t": "graphql-to-typescript src/graphql/*.graphqls src/graphql/types/index.ts "
+    "gql-2-ts": "graphql-to-typescript src/graphql/*.graphqls src/graphql/_generated/types/index.ts "
   },
   "engines": {
     "node": ">= 8.1.4"

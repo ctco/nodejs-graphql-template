@@ -1,5 +1,5 @@
 import * as jokes from '../../connectors/joke';
-import { JokeCategoryEnum, Joke } from '../types';
+import { JokeCategoryEnum, Joke } from '../_generated/types';
 
 const byCategory = async (category: JokeCategoryEnum): Promise<Joke> => {
   const randomJokeResponse = await jokes.getRandomJokeByCategory(category);

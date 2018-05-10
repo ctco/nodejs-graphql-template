@@ -56,10 +56,10 @@ or
 - Docker: `$ docker-compose up --build`
 
 Attention windows users: when `Docker for Windows` is not an option, install `yarn` and run `$ yarn && yarn docker-mount` beforehand.
-## Regenerate GraphQL schema TypeScript types
+## Generate TypeScript types for GraphQL schema 
 
-- npm: `$ npm run g2t`
-- yarn: `$ yarn g2t`
+- npm: `$ npm run gql-2-ts`
+- yarn: `$ yarn gql-2-ts`
 
 ## Test
 
