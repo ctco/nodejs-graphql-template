@@ -1,6 +1,6 @@
 import { createClient } from 'flashheart';
 import logger from '../logger';
-import { JokeCategoryEnum } from '../graphql/types';
+import { JokeCategoryEnum } from '../graphql/_generated/types';
 
 const http = createClient({ logger });
 
