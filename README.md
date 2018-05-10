@@ -8,6 +8,7 @@
 # nodejs-graphql-template
 
 Node.js, Koa, GraphQL and TypeScript template project.
+
 Batteries and opinions included :raised_hands:
 
 ## Features
