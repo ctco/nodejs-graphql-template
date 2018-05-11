@@ -83,6 +83,12 @@ Attention Windows users: when `Docker for Windows` is not an option, install `ya
 - npm: `$ npm test`
 - yarn: `$ yarn test`
 
+### Run e2e tests
+
+Run the app or point E2E_TEST_URL to a remote instance you want to test against.
+- npm: `$ npm run test:e2e`
+- yarn: `$ yarn test:e2e`
+
 ### Generate coverage reports
 
 Set environment variable `CI` to true to generate coverage reports.
