@@ -82,7 +82,7 @@ Attention windows users: when `Docker for Windows` is not an option, install `ya
 
 ### Run e2e tests
 
-Run the app or point E2E_TEST_URI to a remote instance you want to test against.
+Run the app or point E2E_TEST_URL to a remote instance you want to test against.
 - npm: `$ npm run test:e2e`
 - yarn: `$ yarn test:e2e`
 
