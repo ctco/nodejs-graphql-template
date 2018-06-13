@@ -24,7 +24,6 @@ const entryPointConfig: any = {
   endpoints: pickBy(endpointsConfig, identity),
 };
 
-
 const entryPoint = async (ctx) => {
   ctx.body = entryPointConfig;
 };
