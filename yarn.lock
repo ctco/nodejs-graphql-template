@@ -1975,17 +1975,17 @@ graphql-code-generator@^0.5.1:
     pascal-case "^2.0.1"
     request "^2.81.0"
 
-graphql-config@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-2.0.0.tgz#daf69091055c6f675d63893a2d14c48f3fec3327"
+graphql-config@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-1.1.7.tgz#546c443d3ad877ceb8e13f40fbc8937af0d35dbe"
   dependencies:
+    graphql "^0.12.3"
     graphql-import "^0.4.0"
     graphql-request "^1.4.0"
     js-yaml "^3.10.0"
-    lodash "^4.17.4"
     minimatch "^3.0.4"
 
-graphql-cost-analysis@^1.0.1:
+graphql-cost-analysis@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graphql-cost-analysis/-/graphql-cost-analysis-1.0.1.tgz#8924e9ed8d00bf7f623d0272225915704b5e6fcb"
   dependencies:
@@ -2005,17 +2005,18 @@ graphql-import@^0.4.0:
     graphql "^0.13.0"
     lodash "^4.17.4"
 
-graphql-playground-html@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.6.0.tgz#6ec4d54325ab2e5352506fdb89eb37c3fc718bf8"
+graphql-playground-html@1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.5.4.tgz#82752ec4ee36c62d64ccebf7d3ca47477c213bb6"
   dependencies:
-    graphql-config "2.0.0"
+    graphql-config "1.1.7"
 
-graphql-playground-middleware-koa@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/graphql-playground-middleware-koa/-/graphql-playground-middleware-koa-1.6.1.tgz#4b5056ce15136cfe4667e6f438b31f4242ea5e39"
+graphql-playground-middleware-koa@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/graphql-playground-middleware-koa/-/graphql-playground-middleware-koa-1.4.2.tgz#e1c75b6f53e19f73959b771dd6e56f0049306b1f"
   dependencies:
-    graphql-playground-html "1.6.0"
+    graphql-playground-html "1.5.4"
+    koa "^2.4.1"
 
 graphql-request@^1.4.0:
   version "1.4.1"
@@ -2094,6 +2095,12 @@ graphql@0.13.2:
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
   dependencies:
     iterall "^1.2.1"
+
+graphql@^0.12.3:
+  version "0.12.3"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.12.3.tgz#11668458bbe28261c0dcb6e265f515ba79f6ce07"
+  dependencies:
+    iterall "1.1.3"
 
 graphql@^0.13.0:
   version "0.13.1"
@@ -2674,6 +2681,10 @@ istanbul-reports@^1.3.0:
   resolved "https://registry.yarnpkg.com/istanbul-reports/-/istanbul-reports-1.3.0.tgz#2f322e81e1d9520767597dca3c20a0cce89a3554"
   dependencies:
     handlebars "^4.0.3"
+
+iterall@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.1.3.tgz#1cbbff96204056dde6656e2ed2e2226d0e6d72c9"
 
 iterall@^1.0.0, iterall@^1.2.1:
   version "1.2.2"
@@ -3272,7 +3283,7 @@ koa-router@7.4.0:
     path-to-regexp "^1.1.1"
     urijs "^1.19.0"
 
-koa@2.5.1:
+koa@2.5.1, koa@^2.4.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/koa/-/koa-2.5.1.tgz#79f8b95f8d72d04fe9a58a8da5ebd6d341103f9c"
   dependencies:
