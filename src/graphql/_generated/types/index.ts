@@ -6,10 +6,15 @@ export interface Query {
 
 export interface Jokes {
   byCategory: Joke | null;
+  byId: Joke | null;
 }
 
 export interface ByCategoryJokesArgs {
   category: JokeCategoryEnum | null;
+}
+
+export interface ByIdJokesArgs {
+  id: number;
 }
 
 export type JokeCategoryEnum = "NERDY" | "EXPLICIT";

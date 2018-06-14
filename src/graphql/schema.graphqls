@@ -8,6 +8,7 @@ type Query {
 type Jokes {
     # Get _Joke_ by _JokeCategoryEnum_
     byCategory(category: JokeCategoryEnum): Joke
+    byId(id: Int!): Joke
 }
 
 # _Joke_ definition

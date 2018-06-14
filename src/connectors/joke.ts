@@ -12,6 +12,15 @@ const getRandomJokeByCategory = async (category: JokeCategoryEnum): Promise<any>
   return value;
 };
 
+const getJokeById = async (id: Number): Promise<any> => {
+  const uri = `${process.env.JOKE_SERVICE_URL}/jokes/${id}`;
+
+  const { value } = await http.getAsync(uri);
+
+  return value;
+};
+
 export {
   getRandomJokeByCategory,
+  getJokeById,
 };

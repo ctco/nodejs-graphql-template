@@ -1,9 +1,10 @@
-import { byCategory } from '../models/jokes';
-import { ByCategoryJokesArgs, Joke } from '../_generated/types';
+import * as model from '../models/jokes';
+import { ByCategoryJokesArgs, ByIdJokesArgs, Joke } from '../_generated/types';
 
 const resolvers = {
   Jokes: {
-    byCategory: (_, { category }: ByCategoryJokesArgs): Promise<Joke> => byCategory(category!),
+    byCategory: (_, { category }: ByCategoryJokesArgs): Promise<Joke> => model.byCategory(category!),
+    byId: (_, { id }: ByIdJokesArgs): Promise<Joke> => model.byId(id),
   },
 };
 
