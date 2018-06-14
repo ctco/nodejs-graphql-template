@@ -7,6 +7,7 @@ import koaBodyparser from 'koa-bodyparser';
 import { graphqlKoa, graphiqlKoa } from 'apollo-server-koa';
 import koaMiddleware from 'graphql-voyager/middleware/koa';
 const koaPlayground = require('graphql-playground-middleware-koa').default;
+import costAnalysis from 'graphql-cost-analysis';
 import { promisifyAll } from 'bluebird';
 import { Client } from 'flashheart';
 import schema from './graphql/schema';
@@ -28,15 +29,22 @@ if (process.env.CORS) {
 }
 
 // GraphQL
-const graphqlMiddleware = graphqlKoa({
+const graphqlMiddleware = graphqlKoa(ctx => ({
   schema,
   tracing: Boolean(process.env.GRAPHQL_TRACING),
+  validationRules: [
+    costAnalysis({
+      variables: ctx.query,
+      maximumCost: 1000,
+      defaultCost: 1,
+    }),
+  ],
   formatError: (error) => {
     const { message, locations, path, stack } = error;
     logger.error(`GraphQL error`, { message, locations, path }, stack);
     return error;
   },
-});
+}));
 
 router.post(`/${process.env.GRAPHQL_PATH}*`, koaBodyparser(), graphqlMiddleware);
 router.get(`/${process.env.GRAPHQL_PATH}*`, graphqlMiddleware);
