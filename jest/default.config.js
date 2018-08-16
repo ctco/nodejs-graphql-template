@@ -10,7 +10,7 @@ module.exports = Object.assign(
       "json"
     ],
     "transform": {
-      "\\.(ts)$": "ts-jest/preprocessor"
+      "\\.(ts)$": "ts-jest"
     },
     "testRegex": "/__tests__/.*\\.test\\.(ts)$",
     "setupFiles": [

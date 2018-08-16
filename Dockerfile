@@ -1,5 +1,5 @@
 # Prepare
-FROM node:10.4.1-alpine AS base
+FROM node:10.9.0-alpine AS base
 
 WORKDIR /opt/app
 
