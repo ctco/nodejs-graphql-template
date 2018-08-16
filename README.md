@@ -40,7 +40,7 @@ Batteries and opinions included :raised_hands:
 
 ## Required Software
 
-- `node` >= 8.1.4 & `npm` / `yarn`
+- `node` >= 8.1.4 & `yarn`
 
 or
 
@@ -48,21 +48,18 @@ or
 
 ## Install
 
-- npm: `$ npm i`
 - yarn: `$ yarn`
 - Docker: `$ docker-compose up`
 
 ## Develop
 
-- npm: `$ npm start`
 - yarn: `$ yarn start`
 - Docker: `$ docker-compose up --build`
 
 Attention Windows users: when `Docker for Windows` is not an option, install `yarn` and run `$ yarn && yarn docker-mount` beforehand.
 ## Generate TypeScript types for GraphQL schema 
 
-- npm: `$ npm run gql-2-ts`
-- yarn: `$ yarn gql-2-ts`
+`$ yarn gql-2-ts`
 
 ## Test
 
@@ -70,24 +67,21 @@ Attention Windows users: when `Docker for Windows` is not an option, install `ya
 
 ### Run unit tests
 
-- npm: `$ npm run test:unit`
-- yarn: `$ yarn test:unit`
+`$ yarn test:unit`
 
 ### Run integration tests
 
-- npm: `$ npm run test:integration`
-- yarn: `$ yarn test:integration`
+`$ yarn test:integration`
 
 ### Run all tests
 
-- npm: `$ npm test`
-- yarn: `$ yarn test`
+`$ yarn test`
 
 ### Run e2e tests
 
 Run the app or point E2E_TEST_URL to a remote instance you want to test against.
-- npm: `$ npm run test:e2e`
-- yarn: `$ yarn test:e2e`
+
+`$ yarn test:e2e`
 
 ### Generate coverage reports
 
@@ -95,19 +89,15 @@ Set environment variable `CI` to true to generate coverage reports.
 
 In *nix:
 
-`CI=true npm test`
-or
 `CI=true yarn test`
 
 In Windows:
 
-`set CI=true&&npm test`
-or
 `set CI=true&&yarn test`
 
 ## Build
 
-`$ npm run build` or `$ yarn build` or `$ docker build .`
+`$ yarn build` or `$ docker build .`
 
 ## Tech Stack
 
