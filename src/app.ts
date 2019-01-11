@@ -41,7 +41,7 @@ const graphqlMiddleware = graphqlKoa(ctx => ({
   ],
   formatError: (error) => {
     const { message, locations, path, stack } = error;
-    logger.error(`GraphQL error`, { message, locations, path }, stack);
+    logger.error('GraphQL error', { message, locations, path }, stack);
     return error;
   },
 }));

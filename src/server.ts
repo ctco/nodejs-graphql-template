@@ -10,11 +10,11 @@ const port = process.env.PORT;
 app.listen(port, () => {
   if (process.env.NODE_ENV === 'development') {
     if (process.env.GRAPHIQL) {
-      console.log(`The GraphiQL App is running at:`);
+      console.log('The GraphiQL App is running at:');
       console.log();
       console.log(`  ${chalk.cyan(`http://localhost:${port}/${process.env.GRAPHIQL_PATH }`)}`);
     } else {
-      console.log(`The Koa App is running at:`);
+      console.log('The Koa App is running at:');
       console.log();
       console.log(`  ${chalk.cyan(`http://localhost:${port}`)}`);
     }
@@ -22,7 +22,7 @@ app.listen(port, () => {
       if (process.env.GRAPHIQL) {
         console.log();
       }
-      console.log(`The GraphQL Voyager App is running at:`);
+      console.log('The GraphQL Voyager App is running at:');
       console.log();
       console.log(`  ${chalk.cyan(`http://localhost:${port}/${process.env.VOYAGER_PATH}`)}`);
     }
@@ -30,11 +30,11 @@ app.listen(port, () => {
       if (process.env.GRAPHIQL || process.env.VOYAGER) {
         console.log();
       }
-      console.log(`The GraphQL Plaground App is running at:`);
+      console.log('The GraphQL Plaground App is running at:');
       console.log();
       console.log(`  ${chalk.cyan(`http://localhost:${port}/${process.env.PLAYGROUND_PATH}`)}`);
     }
   } else {
-    console.log(`The Koa App is running`);
+    console.log('The Koa App is running');
   }
 });

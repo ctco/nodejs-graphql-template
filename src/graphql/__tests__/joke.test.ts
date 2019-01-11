@@ -13,7 +13,7 @@ beforeAll(() => {
     type: 'success',
     value: {
       id: 2000,
-      joke: `Chuck Norris can write to an output stream.`,
+      joke: 'Chuck Norris can write to an output stream.',
       categories: [],
     },
   };
@@ -25,7 +25,7 @@ beforeAll(() => {
     type: 'success',
     value: {
       id: 1000,
-      joke: `Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.`,
+      joke: "Mock Chuck Norris's database has only one table, 'Kick', which he DROPs frequently.",
       categories: [
         'nerdy',
       ],
