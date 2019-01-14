@@ -109,6 +109,7 @@ In Windows:
 
 - GraphQL
   - [graphql-tools](https://github.com/apollographql/graphql-tools)
+  - [graphql-import](https://github.com/prisma/graphql-import)
   - [graphql-tracing](https://github.com/apollographql/apollo-tracing)
   - [apollo-server](https://github.com/apollographql/apollo-server)
   - [graphql-voyager](https://apis.guru/graphql-voyager)
