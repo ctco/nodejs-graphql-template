@@ -33,6 +33,7 @@
     "flashheart": "2.9.0",
     "graphql": "14.0.2",
     "graphql-cost-analysis": "1.0.2",
+    "graphql-import": "0.7.1",
     "graphql-playground-middleware-koa": "1.6.8",
     "graphql-tools": "4.0.3",
     "graphql-voyager": "1.0.0-rc.26",

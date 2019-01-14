@@ -1,6 +1,6 @@
 language: typescript
 
-schema: ./src/graphql/schema.graphql
+schema: ./src/graphql/schema/schema.graphql
 models:
   files:
     - ./src/graphql/models/interfaces/jokes.ts
