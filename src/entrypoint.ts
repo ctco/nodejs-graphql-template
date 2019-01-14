@@ -1,13 +1,15 @@
 import path from 'path';
 import fs from 'fs';
-import { pickBy, identity, isEmpty } from 'lodash';
+import { pickBy, identity } from 'lodash';
+
+import paths from './paths';
 
 const endpointsConfig = {
-  graphql: `${process.env.SELF_URL}/${process.env.GRAPHQL_PATH}`,
-  liveness: `${process.env.SELF_URL}/${process.env.LIVENESS_PATH}`,
-  graphiql: process.env.GRAPHIQL && `${process.env.SELF_URL}/${process.env.GRAPHIQL_PATH}`,
-  playground: process.env.PLAYGROUND && `${process.env.SELF_URL}/${process.env.PLAYGROUND_PATH}`,
-  voyager: process.env.VOYAGER && `${process.env.SELF_URL}/${process.env.VOYAGER_PATH}`,
+  graphql: `${process.env.SELF_URL}/${paths.GRAPHQL_PATH}`,
+  liveness: `${process.env.SELF_URL}/${paths.LIVENESS_PATH}`,
+  graphiql: process.env.GRAPHIQL && `${process.env.SELF_URL}/${paths.GRAPHIQL_PATH}`,
+  playground: process.env.PLAYGROUND && `${process.env.SELF_URL}/${paths.PLAYGROUND_PATH}`,
+  voyager: process.env.VOYAGER && `${process.env.SELF_URL}/${paths.VOYAGER_PATH}`,
 };
 
 const packageJsonPath = path.resolve('package.json');
