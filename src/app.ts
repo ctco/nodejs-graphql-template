@@ -13,6 +13,7 @@ import { Client } from 'flashheart';
 import schema from './graphql/schema';
 import logger from './logger';
 import { entryPoint } from './entrypoint';
+import paths from './paths';
 
 promisifyAll(Client.prototype);
 
@@ -46,14 +47,14 @@ const graphqlMiddleware = graphqlKoa(ctx => ({
   },
 }));
 
-router.post(`/${process.env.GRAPHQL_PATH}*`, koaBodyparser(), graphqlMiddleware);
-router.get(`/${process.env.GRAPHQL_PATH}*`, graphqlMiddleware);
+router.post(`/${paths.GRAPHQL_PATH}*`, koaBodyparser(), graphqlMiddleware);
+router.get(`/${paths.GRAPHQL_PATH}*`, graphqlMiddleware);
 
-const GRAPHQL_ENDPOINT = `${process.env.SELF_URL}/${process.env.GRAPHQL_PATH}`;
+const GRAPHQL_ENDPOINT = `${process.env.SELF_URL}/${paths.GRAPHQL_PATH}`;
 
 // GraphQL Voyager?
 if (process.env.VOYAGER) {
-  router.all(`/${process.env.VOYAGER_PATH}`, koaMiddleware({
+  router.all(`/${paths.VOYAGER_PATH}`, koaMiddleware({
     endpointUrl: GRAPHQL_ENDPOINT,
     displayOptions: {
       sortByAlphabet: true,
@@ -64,7 +65,7 @@ if (process.env.VOYAGER) {
 // GraphiQL?
 if (process.env.GRAPHIQL) {
   router.get(
-    `/${process.env.GRAPHIQL_PATH}`,
+    `/${paths.GRAPHIQL_PATH}`,
     graphiqlKoa({ endpointURL: GRAPHQL_ENDPOINT }),
   );
 }
@@ -72,13 +73,13 @@ if (process.env.GRAPHIQL) {
 // GraphQL Playground?
 if (process.env.PLAYGROUND) {
   router.all(
-    `/${process.env.PLAYGROUND_PATH}`,
+    `/${paths.PLAYGROUND_PATH}`,
     koaPlayground({ endpoint: GRAPHQL_ENDPOINT }),
   );
 }
 
 // Koa Heartbeat
-app.use(koaHeartbeat({ path: `/${process.env.LIVENESS_PATH}`, body: 'ok' }));
+app.use(koaHeartbeat({ path: `/${paths.LIVENESS_PATH}`, body: 'ok' }));
 
 app.use(router.routes());
 app.use(router.allowedMethods());
