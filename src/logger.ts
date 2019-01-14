@@ -1,23 +1,20 @@
-import winston from 'winston';
+import { createLogger, transports, format } from 'winston';
 import moment from 'moment';
 
-const logger = new (winston.Logger)({
+const timestamp = () => moment().format('YYYY-MM-DD HH:mm:ss.SSSS');
+
+const customFormat = format.printf(options =>
+  `${timestamp()} ${options.level.toUpperCase()} ${(options.message ? options.message : '')}
+  ${(options.meta && Object.keys(options.meta).length
+    ? '\n\t' + JSON.stringify(options.meta) // tslint:disable-line:prefer-template
+    : '')}`);
+
+const logger = createLogger({
+  level: process.env.LOG_LEVEL || 'info',
+  format: customFormat,
   transports: [
-    new (winston.transports.Console)({
-      timestamp: () => moment().format('YYYY-MM-DD HH:mm:ss.SSSS'),
-      formatter: options =>
-        options.timestamp() + ' ' +
-        options.level.toUpperCase() + ' ' +
-        (options.message ? options.message : '') +
-        (
-          options.meta && Object.keys(options.meta).length
-            ? '\n\t' + JSON.stringify(options.meta)
-            : ''
-        ),
-    }),
+    new (transports.Console)(),
   ],
 });
-
-logger.level = process.env.LOG_LEVEL || 'info';
 
 export default logger;
