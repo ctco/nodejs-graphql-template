@@ -1,9 +1,14 @@
 import { merge } from 'lodash';
+import { Resolvers } from '../_generated/types';
 
-import query from './query';
-import jokes from './jokes';
+import { query as Query } from './Query';
+import { jokes as Jokes } from './Jokes';
+import { joke as Joke } from './Joke';
 
-export default merge(
-  query,
-  jokes,
-);
+const resolvers: Resolvers = {
+  Query,
+  Jokes,
+  Joke,
+};
+
+export default merge(resolvers);

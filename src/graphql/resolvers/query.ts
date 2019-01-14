@@ -1,9 +1,6 @@
-import { byCategory } from '../models/jokes';
+import { QueryResolvers } from '../_generated/types';
 
-const resolvers = {
-  Query: {
-    jokes: () => ({}),
-  },
+export const query: QueryResolvers.Type = {
+  ...QueryResolvers.defaultResolvers,
+  jokes: () => ({}),
 };
-
-export default resolvers;

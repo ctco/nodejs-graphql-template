@@ -20,7 +20,7 @@
     "copy:graphql": "cpx \"src/**/*.{gql,graphql,graphqls}\" build",
     "copy:graphql:watch": "chokidar \"./src/**/*.{gql,graphql,graphqls}\" -c \"yarn clean:graphql && yarn copy:graphql && touch src/server.ts\"",
     "docker-mount": "docker-share mount -t",
-    "gql-2-ts": "graphql-to-typescript src/graphql/*.graphqls src/graphql/_generated/types/index.ts "
+    "gqlgen": "graphqlgen"
   },
   "engines": {
     "node": ">= 8.1.4"
@@ -62,7 +62,7 @@
     "cpx": "1.5.0",
     "docker-share": "0.0.4",
     "graphql-tag": "2.10.0",
-    "graphql-to-typescript": "0.1.2",
+    "graphqlgen": "0.5.0",
     "isomorphic-fetch": "2.2.1",
     "jest": "23.6.0",
     "jest-junit": "6.0.0",
