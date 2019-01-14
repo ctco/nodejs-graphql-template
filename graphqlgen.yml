@@ -1,0 +1,12 @@
+language: typescript
+
+schema: ./src/graphql/schema.graphql
+models:
+  files:
+    - ./src/graphql/models/interfaces/jokes.ts
+
+output: ./src/graphql/_generated/types/index.ts
+
+resolver-scaffolding:
+  output: ./src/graphql/_generated/tmp-resolvers/
+  layout: file-per-type
