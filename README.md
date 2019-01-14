@@ -57,9 +57,9 @@ or
 - Docker: `$ docker-compose up --build`
 
 Attention Windows users: when `Docker for Windows` is not an option, install `yarn` and run `$ yarn && yarn docker-mount` beforehand.
-## Generate TypeScript types for GraphQL schema 
+## Generate TypeScript types for GraphQL schema and default GraphQL resolvers 
 
-`$ yarn gql-2-ts`
+`$ yarn gqlgen`
 
 ## Test
 
@@ -113,7 +113,7 @@ In Windows:
   - [apollo-server](https://github.com/apollographql/apollo-server)
   - [graphql-voyager](https://apis.guru/graphql-voyager)
   - [graphql-playground](https://github.com/graphcool/graphql-playground)
-  - [graphql-to-typescript](https://github.com/3VLINC/graphql-to-typescript)
+  - [graphqlgen](https://github.com/prisma/graphqlgen)
 
 - Jest
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)
