@@ -11,5 +11,5 @@ export const film = {
   vehicleConnection: connection('vehicles'),
   characterConnection: connection('characters'),
   planetConnection: connection('planets'),
-  id: globalIdResolver()
+  id: globalIdResolver(),
 };

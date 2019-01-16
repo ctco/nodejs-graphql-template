@@ -109,12 +109,17 @@ In Windows:
 
 - GraphQL
   - [graphql-tools](https://github.com/apollographql/graphql-tools)
+  - [graphql-relay](https://github.com/graphql/graphql-relay-js)
+  - [graphql-relay-tools](https://github.com/excitement-engineer/graphql-relay-tools)
   - [graphql-import](https://github.com/prisma/graphql-import)
   - [graphql-tracing](https://github.com/apollographql/apollo-tracing)
   - [apollo-server](https://github.com/apollographql/apollo-server)
   - [graphql-voyager](https://apis.guru/graphql-voyager)
   - [graphql-playground](https://github.com/graphcool/graphql-playground)
   - [graphqlgen](https://github.com/prisma/graphqlgen)
+
+- DataLoader
+  - [dataloader](https://github.com/facebook/dataloader)
 
 - Jest
   - [Documentation](https://facebook.github.io/jest/docs/en/getting-started.html)

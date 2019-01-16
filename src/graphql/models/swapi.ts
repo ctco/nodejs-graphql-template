@@ -3,7 +3,7 @@ import {
     getObjectsFromUrls,
     getObjectFromTypeAndId,
     getObjectsFromType,
-    objectWithId
+    objectWithId,
 } from '../../connectors/swapi';
 
 type ObjectsByType = {

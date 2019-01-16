@@ -22,16 +22,16 @@ type Query {
 
   allPeople${connectionArgs()}: PeopleConnection
   person(id: ID, personID: ID): Person
-  
+
   allPlanets${connectionArgs()}: PlanetsConnection
   planet(id: ID, planetID: ID): Planet
-  
+
   allSpecies${connectionArgs()}: SpeciesConnection
   species(id: ID, speciesID: ID): Species
-  
+
   allStarships${connectionArgs()}: StarshipsConnection
   starship(id: ID, starshipID: ID): Starship
-  
+
   allVehicles${connectionArgs()}: VehiclesConnection
   vehicle(id: ID, vehicleID: ID): Vehicle
 

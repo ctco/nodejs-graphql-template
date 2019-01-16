@@ -8,19 +8,18 @@ function rootField(idName, swapiType) {
     if (!isEmpty(args[idName])) {
       return byTypeAndId(swapiType, args[idName]);
     }
-    
+
     if (!isEmpty(args.id)) {
       const globalId = fromGlobalId(args.id);
-      
+
       if (isEmpty(globalId.id)) {
-        throw new Error('No valid ID extracted from ' + args.id);
+        throw new Error(`No valid ID extracted from ${args.id}`);
       }
 
       return byTypeAndId(swapiType, globalId.id);
-    
     }
-    
-    throw new Error('must provide id or ' + idName);
+
+    throw new Error(`must provide id or ${idName}`);
   };
 }
 
