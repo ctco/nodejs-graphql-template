@@ -5,10 +5,13 @@ import { query as Query } from './Query';
 import { jokes as Jokes } from './Jokes';
 import { joke as Joke } from './Joke';
 
+/** SWAPI resolvers */
+import swapiResolvers from './swapi';
+
 const resolvers: Resolvers = {
   Query,
   Jokes,
   Joke,
 };
 
-export default merge(resolvers);
+export default merge(resolvers, swapiResolvers);

@@ -7,6 +7,7 @@ const env = envalid.cleanEnv(process.env, {
   SELF_URL: str({ devDefault: 'http://localhost:3001' }),
   NODE_ENV: str({ devDefault: 'development' }),
   JOKE_SERVICE_URL: url({ default: 'https://api.icndb.com' }),
+  SWAPI_SERVICE_URL: url({ default: 'https://swapi.co/api' }),
   GRAPHQL_TRACING: bool({ default: true }),
   GRAPHIQL: bool({ default: true }),
   VOYAGER: bool({ default: true }),

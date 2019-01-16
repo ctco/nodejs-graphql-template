@@ -1500,6 +1500,11 @@ data-urls@^1.0.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
+dataloader@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/dataloader/-/dataloader-1.4.0.tgz#bca11d867f5d3f1b9ed9f737bd15970c65dff5c8"
+  integrity sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==
+
 debounce@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.0.tgz#44a540abc0ea9943018dc0eaa95cce87f65cd131"
@@ -2380,7 +2385,7 @@ graphql-extensions@^0.0.x, graphql-extensions@~0.0.9:
     core-js "^2.5.3"
     source-map-support "^0.5.1"
 
-graphql-import@0.7.1, graphql-import@^0.7.1:
+graphql-import@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.7.1.tgz#4add8d91a5f752d764b0a4a7a461fcd93136f223"
   integrity sha512-YpwpaPjRUVlw2SN3OPljpWbVRWAhMAyfSba5U47qGMOSsPLi2gYeJtngGpymjm9nk57RFWEpjqwh4+dpYuFAPw==
@@ -2399,6 +2404,18 @@ graphql-playground-middleware-koa@1.6.8:
   integrity sha512-dRGsVyCFR4x/DQy3Ai06lRQBQNhmUceLE60mpc2VFsrXj+XlUp9Jp/m8rQMoKHnZEbSmMFXFjSISZtaWFysOaQ==
   dependencies:
     graphql-playground-html "1.6.6"
+
+graphql-relay-tools@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/graphql-relay-tools/-/graphql-relay-tools-0.1.1.tgz#c6ca0d00c1ceddf08854544299d186ec5af474ca"
+  integrity sha1-xsoNAMHO3fCIVFRCmdGG7Fr0dMo=
+  dependencies:
+    graphql-relay "^0.5.3"
+
+graphql-relay@^0.5.3, graphql-relay@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/graphql-relay/-/graphql-relay-0.5.5.tgz#d6815e6edd618e878d5d921c13fc66033ec867e2"
+  integrity sha1-1oFebt1hjoeNXZIcE/xmAz7IZ+I=
 
 graphql-tag@2.10.0:
   version "2.10.0"
