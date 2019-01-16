@@ -13,31 +13,17 @@ export const dataLoader = new DataLoader(urls =>
   Promise.all(urls.map(getFromUrl)),
 );
 
-/**
- * Given an object URL, fetch it, and return it.
- */
-export const getObjectFromUrl = async (url: string): Promise<any> => {
-  return await dataLoader.load(url);
-};
+export const getObjectFromUrl = async (url: string): Promise<any> => dataLoader.load(url);
 
-/**
- * Given a type, get the object, and return it.
- */
 export const getObjectsFromType = async (type: string): Promise<any> => {
   return await getObjectFromUrl(`${process.env.SWAPI_SERVICE_URL}/${type}/`);
 };
 
-/**
- * Given a type and ID, get the object with the ID.
- */
 export const getObjectFromTypeAndId = async (type: string, id: string): Promise<any> => {
   const data = await getObjectFromUrl(`${process.env.SWAPI_SERVICE_URL}/${type}/${id}/`);
   return objectWithId(data);
 };
 
-/**
- * Given an objects URLs, fetch it, append the ID to it, and return it.
- */
 export const getObjectsFromUrls = async (urls: string[]): Promise<any[]> => {
   const array = await Promise.all(urls.map(getObjectFromUrl));
   return array.map(objectWithId);

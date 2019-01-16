@@ -1,10 +1,4 @@
-import {
-    getObjectFromUrl,
-    getObjectsFromUrls,
-    getObjectFromTypeAndId,
-    getObjectsFromType,
-    objectWithId,
-} from '../../connectors/swapi';
+import * as swapi from '../../connectors/swapi';
 
 type ObjectsByType = {
   objects: Object[],
@@ -15,15 +9,14 @@ type ObjectsByType = {
   * Given a type, fetch all of the pages, and join the objects together
   */
 const byType = async (type: string): Promise<ObjectsByType> => {
-  const typeData = await getObjectsFromType(type);
+  const typeData = await swapi.getObjectsFromType(type);
   let objects: Object[] = [];
   let nextUrl = typeData.next;
 
-  objects = objects.concat(typeData.results.map(objectWithId));
+  objects = objects.concat(typeData.results.map(swapi.objectWithId));
   while (nextUrl) {
-    // eslint-disable-next-line no-await-in-loop
-    const pageData = await getObjectFromUrl(nextUrl);
-    objects = objects.concat(pageData.results.map(objectWithId));
+    const pageData = await swapi.getObjectFromUrl(nextUrl);
+    objects = objects.concat(pageData.results.map(swapi.objectWithId));
     nextUrl = pageData.next;
   }
 
@@ -31,26 +24,15 @@ const byType = async (type: string): Promise<ObjectsByType> => {
   return { objects, totalCount: objects.length };
 };
 
-/**
- * Given a type and ID, get the object with the ID.
- */
-const byTypeAndId = async (type: string, id: string): Promise<Object> => {
-  return await getObjectFromTypeAndId(type, id);
-};
+const byTypeAndId = async (type: string, id: string): Promise<Object> => swapi.getObjectFromTypeAndId(type, id);
 
-/**
- * Given an object URL, fetch it, append the ID to it, and return it.
- */
 const byUrl = async (url: string): Promise<any> => {
-  const data = await getObjectFromUrl(url);
-  return objectWithId(data);
+  const data = await swapi.getObjectFromUrl(url);
+  return swapi.objectWithId(data);
 };
 
-/**
- * Given an objects URLs, fetch it, append the ID to it, sort it, and return it.
- */
 const byUrls = async (urls: string[]): Promise<any[]> => {
-  const array = await getObjectsFromUrls(urls);
+  const array = await swapi.getObjectsFromUrls(urls);
   return sortObjectsById(array);
 };
 

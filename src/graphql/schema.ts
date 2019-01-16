@@ -4,7 +4,6 @@ import { importSchema } from 'graphql-import';
 
 import resolvers from './resolvers';
 
-/** SWAPI schema */
 import { swapiDef } from './schema/swapi';
 
 const schemas = {

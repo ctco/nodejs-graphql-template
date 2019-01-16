@@ -6,7 +6,6 @@ import { jokes as Jokes } from './Jokes';
 import { joke as Joke } from './Joke';
 import { node as Node } from './Node';
 
-/** SWAPI resolvers */
 import swapiResolvers from './swapi';
 
 const resolvers: Resolvers = {
