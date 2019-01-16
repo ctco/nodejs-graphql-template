@@ -14,14 +14,14 @@ export const dataLoader = new DataLoader(urls =>
 );
 
 /**
- * Given an object URL, fetch it, append the ID to it, and return it.
+ * Given an object URL, fetch it, and return it.
  */
 export const getObjectFromUrl = async (url: string): Promise<any> => {
   return await dataLoader.load(url);
 };
 
 /**
- * Given a type, get the object with the ID.
+ * Given a type, get the object, and return it.
  */
 export const getObjectsFromType = async (type: string): Promise<any> => {
   return await getObjectFromUrl(`${process.env.SWAPI_SERVICE_URL}/${type}/`);
@@ -36,7 +36,7 @@ export const getObjectFromTypeAndId = async (type: string, id: string): Promise<
 };
 
 /**
- * Given an objects URLs, fetch it, append the ID to it, sort it, and return it.
+ * Given an objects URLs, fetch it, append the ID to it, and return it.
  */
 export const getObjectsFromUrls = async (urls: string[]): Promise<any[]> => {
   const array = await Promise.all(urls.map(getObjectFromUrl));

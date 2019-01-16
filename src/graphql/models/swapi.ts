@@ -42,7 +42,8 @@ const byTypeAndId = async (type: string, id: string): Promise<Object> => {
  * Given an object URL, fetch it, append the ID to it, and return it.
  */
 const byUrl = async (url: string): Promise<any> => {
-  return await getObjectFromUrl(url);
+  const data = await getObjectFromUrl(url);
+  return objectWithId(data);
 };
 
 /**
