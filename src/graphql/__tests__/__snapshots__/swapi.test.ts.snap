@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`query.swapi should match snapshot with pagination 1`] = `
+Object {
+  "data": Object {
+    "allFilms": Object {
+      "edges": Array [
+        Object {
+          "cursor": "YXJyYXljb25uZWN0aW9uOjA=",
+          "node": Object {
+            "episodeID": 4,
+            "title": "A New Hope",
+          },
+        },
+        Object {
+          "cursor": "YXJyYXljb25uZWN0aW9uOjE=",
+          "node": Object {
+            "episodeID": 2,
+            "title": "Attack of the Clones",
+          },
+        },
+      ],
+      "films": Array [
+        Object {
+          "episodeID": 4,
+          "title": "A New Hope",
+        },
+        Object {
+          "episodeID": 2,
+          "title": "Attack of the Clones",
+        },
+      ],
+      "pageInfo": Object {
+        "endCursor": "YXJyYXljb25uZWN0aW9uOjE=",
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "startCursor": "YXJyYXljb25uZWN0aW9uOjA=",
+      },
+      "totalCount": 2,
+    },
+  },
+  "errors": undefined,
+}
+`;
+
+exports[`query.swapi should match snapshot without pagination 1`] = `
+Object {
+  "data": Object {
+    "film": Object {
+      "episodeID": 5,
+      "title": "The Empire Strikes Back",
+    },
+  },
+  "errors": undefined,
+}
+`;

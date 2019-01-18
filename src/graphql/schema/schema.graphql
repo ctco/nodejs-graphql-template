@@ -1,1 +1,5 @@
+# import * from "nodeInterface"
+# import * from "pageInfoType"
+
 # import Query.* from "jokes.graphql"
+# import Query.* from "swapi"

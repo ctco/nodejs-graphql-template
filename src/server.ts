@@ -1,4 +1,5 @@
 import 'source-map-support/register';
+import './declaration';
 import paths from './paths';
 import env from './env';
 process.env = env;
