@@ -9,7 +9,10 @@ import koaMiddleware from 'graphql-voyager/middleware/koa';
 const koaPlayground = require('graphql-playground-middleware-koa').default;
 import costAnalysis from 'graphql-cost-analysis';
 import { promisifyAll } from 'bluebird';
+import { get } from 'lodash';
 import { Client } from 'flashheart';
+import Storage from 'stack-storage';
+import uuid from 'uuid/v4';
 import schema from './graphql/schema';
 import logger from './logger';
 import { entryPoint } from './entrypoint';
@@ -23,6 +26,12 @@ const router = new koaRouter();
 
 // Entry Point
 router.get('/', entryPoint);
+
+// Request ID creation
+app.use(async (ctx, next) => {
+  process.storage = new Storage([['rid', get(ctx.req.headers, 'x-request-id', uuid())]]);
+  await next();
+});
 
 // CORS?
 if (process.env.CORS) {
@@ -80,6 +89,14 @@ if (process.env.PLAYGROUND) {
 
 // Koa Heartbeat
 app.use(koaHeartbeat({ path: `/${paths.LIVENESS_PATH}`, body: 'ok' }));
+
+// Time logging
+app.use(async (ctx, next) => {
+  const start = Date.now();
+  await next();
+  const end = Date.now() - start;
+  logger.info(`${ctx.method} ${ctx.url} - ${end}ms`);
+});
 
 app.use(router.routes());
 app.use(router.allowedMethods());

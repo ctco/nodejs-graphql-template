@@ -1500,7 +1500,7 @@ data-urls@^1.0.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-dataloader@^1.4.0:
+dataloader@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/dataloader/-/dataloader-1.4.0.tgz#bca11d867f5d3f1b9ed9f737bd15970c65dff5c8"
   integrity sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==
@@ -2405,14 +2405,14 @@ graphql-playground-middleware-koa@1.6.8:
   dependencies:
     graphql-playground-html "1.6.6"
 
-graphql-relay-tools@^0.1.1:
+graphql-relay-tools@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/graphql-relay-tools/-/graphql-relay-tools-0.1.1.tgz#c6ca0d00c1ceddf08854544299d186ec5af474ca"
   integrity sha1-xsoNAMHO3fCIVFRCmdGG7Fr0dMo=
   dependencies:
     graphql-relay "^0.5.3"
 
-graphql-relay@^0.5.3, graphql-relay@^0.5.5:
+graphql-relay@0.5.5, graphql-relay@^0.5.3:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/graphql-relay/-/graphql-relay-0.5.5.tgz#d6815e6edd618e878d5d921c13fc66033ec867e2"
   integrity sha1-1oFebt1hjoeNXZIcE/xmAz7IZ+I=
@@ -5537,6 +5537,11 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
+
+stack-storage@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/stack-storage/-/stack-storage-2.0.0.tgz#c0b2052e561991ab7bd5d6b1d84e31559e120d28"
+  integrity sha512-C3EYNHBlBQFwaPNndOxWj6nQQQS/iVsZwWcXV6VgR1ViGrROpZlpS3kh1GJknC5Qi5Z0sadFBPT2t8cAPa7MeQ==
 
 stack-trace@0.0.x:
   version "0.0.10"
